@@ -67,4 +67,16 @@ Deploy
 ```bash
 mkdocs gh-deploy
 ```
-https://chatgpt.com/c/69874d93-3930-8325-bed8-c30179cd8b3f
+The result will be
+
+```bash
+remote: Resolving deltas: 100% (13/13), done.
+remote: 
+remote: Create a pull request for 'gh-pages' on GitHub by visiting:
+remote:      https://github.com/apedano/python-course/pull/new/gh-pages
+remote: 
+To github.com:apedano/python-course.git
+ * [new branch]      gh-pages -> gh-pages
+INFO    -  Your documentation should shortly be available at: https://apedano.github.io/python-course/
+```
+So the page will be available at the indicated url
