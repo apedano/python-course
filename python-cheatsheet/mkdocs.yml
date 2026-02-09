@@ -45,9 +45,16 @@ markdown_extensions:
 plugins:
   - search
 nav:
-  - Home: index.md
   - Basics Concepts:
-      - basics/index.md
+      - basics/printing.md
+      - basics/strings.md
+      - basics/input.md
+      - basics/variables.md
+      - basics/data_types.md
+      - basics/math_ops.md
+  - Flow control:
+      - flow_control/logical_operators.md
+      - flow_control/if_statement.md
   - Collections:
       - collections/index.md
   - Itertools:
@@ -58,3 +65,5 @@ nav:
       - typing/index.md
   - Gotchas:
       - gotchas/index.md
+  - MKDocs Tutorial:
+      index.md

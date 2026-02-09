@@ -9,6 +9,8 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
+Run the file [activate_virtual_env.sh](activate_virtual_env.sh)
+
 Install MkDocs + Material:
 
 ```bash
@@ -44,7 +46,7 @@ Inside the `/doc` folder create folders for sections
 mkdir basics collections itertools async typing gotchas
 ```
 
-Example file [index.md](python-cheatsheet/docs/basics/index.md)
+Example file [index.md](python-cheatsheet/docs/basics/variables.md)
 
 ### Add navigation
 
@@ -53,7 +55,8 @@ Example file [index.md](python-cheatsheet/docs/basics/index.md)
 ## Run locally 
 
 Target port can be specified
-```
+
+```bash
 mkdocs serve -a 127.0.0.1:8001 
 ```
 
