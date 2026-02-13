@@ -61,6 +61,8 @@ nav:
       - collections/lists.md
   - Itertools:
       - itertools/index.md
+  - Functions:
+      - functions/index.md
   - Async:
       - async/index.md
   - Typing:
