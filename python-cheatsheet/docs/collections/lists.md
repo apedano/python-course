@@ -1,4 +1,4 @@
-# Lists
+#  🐍Lists
 
 | Collection Type | Ordered | Mutable | Allows Duplicates | Indexed Access | Key-Value | Syntax Example      | Notes                                                 |
 |-----------------|---------|---------|-------------------|----------------|-----------|---------------------|-------------------------------------------------------|

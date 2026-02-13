@@ -56,13 +56,16 @@ nav:
       - flow_control/logical_operators.md
       - flow_control/if_statement.md
       - flow_control/for_statement.md
+      - flow_control/while_statement.md
   - Collections:
       - collections/index.md
       - collections/lists.md
-  - Itertools:
-      - itertools/index.md
   - Functions:
       - functions/index.md
+  - Modules:
+      - modules/index.md
+  - Itertools:
+      - itertools/index.md
   - Async:
       - async/index.md
   - Typing:

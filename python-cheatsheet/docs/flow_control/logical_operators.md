@@ -1,4 +1,4 @@
-# Logical operators
+#  🐍Logical operators
 
 ```python
 > Greater than

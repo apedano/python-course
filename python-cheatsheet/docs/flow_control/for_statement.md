@@ -1,4 +1,4 @@
-# `for` Loop
+#  🐍`for` Loop
 
 ## 1. Basic Syntax
 

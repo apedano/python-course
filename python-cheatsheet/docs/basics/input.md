@@ -1,6 +1,6 @@
-# Input
+#  🐍Input
 
-# Simple input
+#  🐍Simple input
 
 ```python
 prompt = input("Prompt for the user")
