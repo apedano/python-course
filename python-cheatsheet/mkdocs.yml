@@ -55,8 +55,10 @@ nav:
   - Flow control:
       - flow_control/logical_operators.md
       - flow_control/if_statement.md
+      - flow_control/for_statement.md
   - Collections:
       - collections/index.md
+      - collections/lists.md
   - Itertools:
       - itertools/index.md
   - Async:

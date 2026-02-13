@@ -111,3 +111,10 @@ aList=["item1", "item2"]
 print(random.choice(aList))
 ```
 
+ list of 10 numbers selected from the range 0 to 99, without duplicates
+
+```python
+import random
+random.sample(range(100), 10)
+
+```

@@ -4,6 +4,16 @@
 |-----------------|---------|---------|-------------------|----------------|-----------|---------------------|-------------------------------------------------------|
 | list            | Yes     | Yes     | Yes               | Yes            | No        | [1, 2, 3]           | Dynamic array, most commonly used sequence            |
 
+## Initialization
+
+```python
+# Size of the list
+n = 5
+
+# Creating a list of size n filled with 0
+a = [""] * n
+```
+
 ```python
 
 states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Connecticut", "Massachusetts", "Maryland", "South Carolina", "New Hampshire", "Virginia", "New York", "North Carolina", "Rhode Island", "Vermont", "Kentucky", "Tennessee", "Ohio", "Louisiana", "Indiana", "Mississippi", "Illinois", "Alabama", "Maine", "Missouri", "Arkansas", "Michigan", "Florida", "Texas", "Iowa", "Wisconsin", "California", "Minnesota", "Oregon", "Kansas", "West Virginia", "Nevada", "Nebraska", "Colorado", "North Dakota", "South Dakota", "Montana", "Washington", "Idaho", "Wyoming", "Utah", "Oklahoma", "New Mexico", "Arizona", "Alaska", "Hawaii"]
@@ -64,6 +74,17 @@ elif [player_choice,computer_choice] in wins:
     print("You win!")
 else:
     print("Computer wins!")
+```
+
+## Join
+
+```python
+letters=["a", "b", "c"]
+
+delimiter = " "
+
+string = "".join(letters) #a b c
+
 ```
 
 ## Additional functions
