@@ -67,3 +67,47 @@ Assignment operators such as the addition assignment operator += will add the nu
 
 /=
 ```
+
+### Randomization
+
+Import the `random()` module 
+
+To generate a `float`
+
+```python
+import random
+rand_num_0_to_1 = random.random() #0.0 <= random.random() < 1.0
+```
+Change the range
+
+```python
+import random
+rand_num_0_to_5 = random.random() * 5 #0.0 <= random.random() < 5.0
+```
+
+Another way to generate random floating point numbers is to use the `uniform()` function.
+This function **includes the upper and lower bounds**
+
+`a <= random.uniform(a,b) <= b`
+
+```python
+import random
+random_float = random.uniform(1, 10)
+```
+
+For `int`
+
+`a <= random.uniform(a,b) <= b`
+```python
+import random
+print(random.randint(3, 9)) 
+```
+
+For collections
+
+```python
+import random
+aList=["item1", "item2"]
+print(random.choice(aList))
+```
+
