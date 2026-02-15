@@ -8,6 +8,14 @@ print("Hello World")
 
 ```
 
+## Multpiply print
+
+
+Prints 10 new lines
+```python
+print("\n" * 10) 
+```
+
 ## F-String (formatted strings) `f""`
 In Python, we can use `f-strings` to insert a variable or an expression into a string.
 ```python

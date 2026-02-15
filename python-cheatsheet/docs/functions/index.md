@@ -56,3 +56,24 @@ def greet_with_name(name, greeting):
 greet_with_name(name="Tommy", greeting="Hello")
 ```
 
+### Functions returning a value
+
+```python
+def test_return(input_value):
+    return input_value + "returned"
+
+my_value = test_return("an input")
+```
+
+### Functions returning multiple values
+
+```python
+def test_return_multiple(input_value):
+    return input_value, input_value + "returned"
+
+original_input, input_returned = test_return_multiple("an input")
+
+print(original_input) #an input
+print(input_returned) #an inputreturned
+```
+

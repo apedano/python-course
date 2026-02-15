@@ -60,6 +60,8 @@ nav:
   - Collections:
       - collections/index.md
       - collections/lists.md
+      - collections/dictionaries.md
+
   - Functions:
       - functions/index.md
   - Modules:
