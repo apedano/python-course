@@ -1,0 +1,4 @@
+# 🐍 Namespace and scopes
+
+## Scope
+

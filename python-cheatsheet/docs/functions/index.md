@@ -56,6 +56,12 @@ def greet_with_name(name, greeting):
 greet_with_name(name="Tommy", greeting="Hello")
 ```
 
+### Default parameters
+
+```python
+
+```
+
 ### Functions returning a value
 
 ```python
@@ -69,6 +75,36 @@ my_value = test_return("an input")
 
 ```python
 def test_return_multiple(input_value):
+    return input_value, input_value + "returned"
+
+original_input, input_returned = test_return_multiple("an input")
+
+print(original_input) #an input
+print(input_returned) #an inputreturned
+```
+
+### Nested functions
+
+```python
+def outer_function(a,b):
+    def inner_function(c, d):
+        return c+d
+    return inner_function(a, b)
+
+print(outer_function(3,5)) #8
+```
+
+### Docstring
+It is used to comment functions
+
+```python
+def test_return_multiple(input_value):
+    """ 
+        My 
+        Multiline 
+        Comment
+        as Docstring 
+    """
     return input_value, input_value + "returned"
 
 original_input, input_returned = test_return_multiple("an input")
