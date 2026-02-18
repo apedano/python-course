@@ -57,15 +57,18 @@ nav:
       - flow_control/if_statement.md
       - flow_control/for_statement.md
       - flow_control/while_statement.md
+  - Error handling:
+      - error_handling/index.md
   - Collections:
       - collections/index.md
       - collections/lists.md
       - collections/dictionaries.md
-
   - Functions:
       - functions/index.md
   - Modules:
       - modules/index.md
+  - Namespaces:
+      - namespaces_scopes/index.md
   - Itertools:
       - itertools/index.md
   - Async:
