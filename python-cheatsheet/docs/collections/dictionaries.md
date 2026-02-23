@@ -30,6 +30,12 @@ programming_dictionary["Function"]
 res_list = list(programming_dictionary.values())
 ```
 
+## List of values
+
+```python
+key_list = list(programming_dictionary.keys())
+```
+
 ## Keys existence value
 
 ```python
@@ -49,6 +55,12 @@ for key in programming_dictionary:
 ```python
 for key, value in programming_dictionary.items():
     print(f"{key}: {value}")
+```
+
+```python
+for dict_item in programming_dictionary.items():
+    print(f"The key is {dict_item[0]}")
+    print(f"The value is {dict_item[1]}")
 ```
 
 ## Nesting dictionaries

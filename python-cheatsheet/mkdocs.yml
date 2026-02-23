@@ -69,6 +69,9 @@ nav:
       - modules/index.md
   - Namespaces:
       - namespaces_scopes/index.md
+  - OOP:
+      - oop/index.md
+      - oop/package.md
   - Itertools:
       - itertools/index.md
   - Async:

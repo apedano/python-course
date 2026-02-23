@@ -29,7 +29,7 @@ mkdocs new python-cheatsheet
 
 ## Minimal project
 
-See [mkdocs.yml](python-cheatsheet/mkdocs.yml)
+See [mkdocs.yml](mkdocs.yml)
 
 This already gives you:
 
@@ -50,7 +50,7 @@ Example file [index.md](python-cheatsheet/docs/basics/variables.md)
 
 ### Add navigation
 
-[mkdocs.yml](python-cheatsheet/mkdocs.yml) (`nav` section)
+[mkdocs.yml](mkdocs.yml) (`nav` section)
 
 ## Run locally 
 

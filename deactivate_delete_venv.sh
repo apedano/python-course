@@ -1,0 +1,3 @@
+deactivate
+
+rm -rf .venv/
