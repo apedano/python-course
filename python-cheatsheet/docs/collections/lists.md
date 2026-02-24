@@ -50,6 +50,51 @@ print(states_of_america)
 states_of_america.extend(["Groenland", "Sicily"])
 
 ```
+## Slicing
+
+```python
+
+list[start:stop:step]
+
+```
+
+`start` → index to begin (**inclusive**)
+
+`stop` → index to end (**exclusive**)
+
+`step` → how many steps to move
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[1:4]) #[20, 30, 40]
+```
+```python
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[:3])   # From start to index 2
+print(numbers[2:])   # From index 2 to end
+print(numbers[:])    # Whole list copy
+```
+```python
+numbers = [10, 20, 30, 40, 50, 60]
+
+print(numbers[::2]) #[10, 30, 50]
+```
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+#Counts from the end.
+print(numbers[-3:]) #[30, 40, 50]
+```
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+#reverse list
+print(numbers[::-1]) #[5, 4, 3, 2, 1] 
+```
 
 ## Merging
 

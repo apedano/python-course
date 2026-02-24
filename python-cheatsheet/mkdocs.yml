@@ -62,6 +62,7 @@ nav:
   - Collections:
       - collections/index.md
       - collections/lists.md
+      - collections/tuples.md
       - collections/dictionaries.md
   - Functions:
       - functions/index.md
@@ -71,7 +72,7 @@ nav:
       - namespaces_scopes/index.md
   - OOP:
       - oop/index.md
-      - oop/package.md
+      - oop/packages.md
   - Itertools:
       - itertools/index.md
   - Async:

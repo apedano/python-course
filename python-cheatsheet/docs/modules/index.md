@@ -95,6 +95,19 @@ The `__init__.py` file tells Python that `utils` is a package.
 
 ------------------------------------------------------------------------
 
+
+# 📦 Using aliases
+
+## Import Statement
+
+``` python
+from turtle as t
+
+my_turtle = t.Turtle() 
+```
+
+------------------------------------------------------------------------
+
 # 🚨 Common Mistakes
 
 ## ❌ Including `.py` in import

@@ -35,8 +35,8 @@ p1 = Person("Alice", 30)
 print(p1.name)  # Alice
 ```
 
--   `self` refers to the instance of the class.
--   `__init__` runs automatically when creating a new object.
+- `self` refers to the instance of the class.
+- `__init__` runs automatically when creating a new object.
 
 ------------------------------------------------------------------------
 
@@ -71,8 +71,8 @@ d1 = Dog("Rex")
 print(d1.species)
 ```
 
--   Class attributes are shared across all instances.
--   Instance attributes are unique per object.
+- Class attributes are shared across all instances.
+- Instance attributes are unique per object.
 
 ------------------------------------------------------------------------
 
@@ -86,13 +86,19 @@ class BankAccount:
         self.__balance = balance  # Private attribute
 
     def deposit(self, amount):
+        self.__validate_amount(amount)  # Calling private method
         self.__balance += amount
 
     def get_balance(self):
         return self.__balance
+
+    # Private method
+    def __validate_amount(self, amount):
+        if amount <= 0:
+            raise ValueError("Deposit amount must be positive")
 ```
 
--   Prefixing with `__` makes it name-mangled (pseudo-private).
+- Prefixing with `__` makes it name-mangled (pseudo-private).
 
 ------------------------------------------------------------------------
 
@@ -113,8 +119,8 @@ d = Dog()
 print(d.speak())
 ```
 
--   `Dog` inherits from `Animal`.
--   Method overriding allows redefining parent methods.
+- `Dog` inherits from `Animal`.
+- Method overriding allows redefining parent methods.
 
 ------------------------------------------------------------------------
 
@@ -177,8 +183,8 @@ class MyClass:
         return x + y
 ```
 
--   `@classmethod` works with class-level data.
--   `@staticmethod` does not access class or instance.
+- `@classmethod` works with class-level data.
+- `@staticmethod` does not access class or instance.
 
 ------------------------------------------------------------------------
 
@@ -198,8 +204,15 @@ b = Book("Python 101")
 print(b)
 ```
 
-Common magic methods: - `__init__` - `__str__` - `__repr__` -
-`__len__` - `__eq__`
+Common magic methods:
+
+| Magic Method | When It Is Called                         | Short Explanation                                                 | Example           |
+|--------------|-------------------------------------------|-------------------------------------------------------------------|-------------------|
+| `__init__`   | When an object is created                 | Initializes (constructs) a new object and sets up its attributes. | `obj = MyClass()` |
+| `__str__`    | When using `print()` or `str()`           | Returns a user-friendly string representation of the object.      | `print(obj)`      |
+| `__repr__`   | When using `repr()` or in the interpreter | Returns an unambiguous, developer-oriented string representation. | `repr(obj)`       |
+| `__len__`    | When using `len()`                        | Returns the length of an object.                                  | `len(obj)`        |
+| `__eq__`     | When using `==`                           | Defines equality comparison between two objects.                  | `obj1 == obj2`    |
 
 ------------------------------------------------------------------------
 
@@ -247,14 +260,14 @@ print(u)
 
 OOP in Python includes:
 
--   Classes and Objects
--   Encapsulation
--   Inheritance
--   Polymorphism
--   Abstraction
--   Composition
--   Magic Methods
--   Dataclasses
+- Classes and Objects
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
+- Composition
+- Magic Methods
+- Dataclasses
 
 OOP helps structure large programs and improves reusability and
 maintainability.

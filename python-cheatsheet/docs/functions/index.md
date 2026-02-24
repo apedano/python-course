@@ -59,7 +59,15 @@ greet_with_name(name="Tommy", greeting="Hello")
 ### Default parameters
 
 ```python
+def add_ingredients(self, water_amount: int = 0, coffee_amount: int = 0, milk_amount: int = 0):
+    self.water_amount = water_amount
+    self.coffee_amount = coffee_amount
+    self.milk_amount = milk_amount
+```
+This makes the function callable without not all parameters
 
+```python
+add_ingredients(water_amount=2, milk_amount=19)
 ```
 
 ### Functions returning a value
@@ -113,3 +121,17 @@ print(original_input) #an input
 print(input_returned) #an inputreturned
 ```
 
+### High order functions
+
+Functions using other functions as parameters
+
+```python
+def apply_operation(func, value):
+    return func(value)
+
+def square(x):
+    return x * x
+
+result = apply_operation(square, 5)
+print(result)  # 25
+```
