@@ -70,9 +70,15 @@ nav:
       - modules/index.md
   - Namespaces:
       - namespaces_scopes/index.md
+  - FileSystem:
+      - file_system/index.md
   - OOP:
       - oop/index.md
       - oop/packages.md
+  - File formats:
+      - file_formats/csv_format.md
+  - Data Analysis:
+      - data_analysis/pandas.md
   - Itertools:
       - itertools/index.md
   - Async:
