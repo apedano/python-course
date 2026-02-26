@@ -67,7 +67,8 @@ with open("file.txt") as f:
     line_list = f.readlines()
 
 for line in line_list:
-    print("Line:",line)
+    print("Line:",line.rstrip())
+
 ```
 
 ------------------------------------------------------------------------

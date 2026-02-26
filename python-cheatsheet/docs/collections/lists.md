@@ -96,6 +96,53 @@ numbers = [1, 2, 3, 4, 5]
 print(numbers[::-1]) #[5, 4, 3, 2, 1] 
 ```
 
+## List comprehension
+
+Creating a list from a previous one
+
+`new_list = [new_item for item in old_list]`
+
+```python
+old_list = [1, 2, 3]
+
+new_list = [num + 1 for num in old_list] #[2, 3, 4]
+```
+
+Works with other sequences
+
+```python
+name="Alessandro"
+
+name_list=[letter for letter in name] #['A', 'l', 'e', 's', 's', 'a', 'n', 'd', 'r', 'o']
+```
+
+```python
+double_numbers = [num * 2 for num in range(1,5)]
+print(double_numbers) #[2, 4, 6, 8]
+```
+
+### Conditional list comprehension
+
+`new_list = [new_item for item in old_list if test]`
+
+
+```python
+names = [
+    "Liam",
+    "Olivia",
+    "Noah",
+    "Emma",
+    "Ava",
+    "Elijah",
+    "Sophia",
+    "Mateo",
+    "Isabella",
+    "Lucas"
+]
+
+short_names = [name for name in names if len(name)<6] #['Liam', 'Noah', 'Emma', 'Ava', 'Mateo', 'Lucas']
+```
+
 ## Merging
 
 ```python

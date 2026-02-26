@@ -1,4 +1,4 @@
-# Data analysis with Pandas
+# 🐍 Data analysis with Pandas
 
 [Documentation](https://pandas.pydata.org/docs/)
 
@@ -22,8 +22,6 @@ Friday,21,Sunny
 Saturday,22,Sunny
 Sunday,24,Sunny
 ```
-
-
 
 ```python
 import pandas as pd
@@ -99,7 +97,6 @@ print(temperatures_list) #[12, 14, 15, 14, 21, 22, 24]
 print(average_temp) #17.428571428571427
 print(temp_series.max()) #24
 ```
-
 
 ## Extracting columns as `Series`
 
@@ -185,3 +182,54 @@ The `data.csv` will contain
 1,Wine,80
 2,House,70
 ``
+
+### Loopint through `DataFrame` with
+
+```python
+import pandas as pd 
+
+student_dict = {"students":["Amy", "Wine", "House"], "scores":[90, 80, 70] }
+
+student_pd = pd.DataFrame(student_dict)
+
+for (key, value) in student_pd.items():
+    print(value) (0, 90) (1, 80) (2, 70)
+```
+The output is 
+
+```
+0      Amy
+1     Wine
+2    House
+Name: students, dtype: str
+0    90
+1    80
+2    70
+Name: scores, dtype: int64
+
+```
+
+### using `iterrows`
+
+```python
+for (index, row) in student_pd.iterrows():
+    print(f"Index:{index}")
+    print(f"Student:{row.students}") #row is a Series
+```
+
+```python
+Index:0
+Row:students    Amy
+scores       90
+Name: 0, dtype: object
+Index:1
+Row:students    Wine
+scores        80
+Name: 1, dtype: object
+Index:2
+Row:students    House
+scores         70
+Name: 2, dtype: object
+```
+
+### Create a dict from a 

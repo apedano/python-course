@@ -24,16 +24,34 @@ empty_dictionary={}
 ```python
 programming_dictionary["Function"]
 ```
-## List of values
+## List of values `values()`
 
 ```python
 res_list = list(programming_dictionary.values())
 ```
 
-## List of values
+## List of keys `keys()`
 
 ```python
 key_list = list(programming_dictionary.keys())
+```
+
+## List of items `items()`
+
+```python
+person = {
+    "name": "Alice",
+    "age": 30,
+    "city": "Amsterdam"
+}
+
+
+print(person.items()) #dict_items([('name', 'Alice'), ('age', 30), ('city', 'Amsterdam')])
+#Each element is a tuple ('name', 'Alice')
+
+for key, value in person.items():
+    print(key, "->", value)
+
 ```
 
 ## Keys existence value
@@ -43,7 +61,6 @@ if key in my_dict:
     print("Key exists")
 
 ```
-
 
 ## Looping
 
@@ -62,6 +79,51 @@ for dict_item in programming_dictionary.items():
     print(f"The key is {dict_item[0]}")
     print(f"The value is {dict_item[1]}")
 ```
+## Dict comprehension
+
+### From list
+
+Create a new dictionary out of an existing list
+
+```python
+new_dict = {new_key:new_value for item in list if condition}
+```
+
+```python
+names = [
+    "Liam",
+    "Olivia",
+    "Noah",
+    "Emma",
+    "Ava",
+    "Elijah",
+    "Sophia",
+    "Mateo",
+    "Isabella",
+    "Lucas"
+]
+
+dict = {name:len(name) for name in names} # {'Ava': 3, 'Elijah': 6, 'Emma': 4, ...}
+```
+
+### From dict
+
+Create a new dictionary out of an existing one
+
+```python
+new_dict = {new_key:new_value for (key, value) in dict.items() if condition} 
+```
+
+```python
+import random
+
+students_scores_dict = {name:random.randint(1,100) for name in names}
+#{'Ava': 3, 'Elijah': 38, 'Emma': 15, 'Isabella': 1, 'Liam': 25, 'Lucas': 23, 'Mateo': 58, 'Noah': 87, 'Olivia': 13, 'Sophia': 49}
+
+students_pass_exam = {name:"passed" for (name,score) in students_scores_dict.items() if score>50}
+#{'Mateo': 'passed', 'Noah': 'passed'}
+```
+
 
 ## Nesting dictionaries
 
