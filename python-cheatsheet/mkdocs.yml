@@ -79,6 +79,8 @@ nav:
       - file_formats/csv_format.md
   - Data Analysis:
       - data_analysis/pandas.md
+  - GUI:
+      - gui/gui_with_tkinter.md
   - Itertools:
       - itertools/index.md
   - Async:

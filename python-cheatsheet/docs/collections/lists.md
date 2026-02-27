@@ -194,6 +194,44 @@ string = "".join(letters)  # a b c
 
 [Documentation on list functions](https://docs.python.org/3/tutorial/datastructures.html)
 
+`reduce()`
+
+### `map()` 
+Use lambda to map values
+```python
+numbers = [1, 2, 3, 4]
+
+squared = list(map(lambda x: x * x, numbers))
+
+print(squared)
+# [1, 4, 9, 16]
+```
+
+### `filter()`
+
+```python
+numbers = [1, 2, 3, 4, 5, 6]
+
+evens = list(filter(lambda x: x % 2 == 0, numbers))
+
+print(evens)
+# [2, 4, 6]
+```
+### `sorted()`
+
+```python
+students = [
+    ("Charlie", 23),
+    ("Bob", 20),
+    ("Alice", 25)
+]
+
+sorted_students = sorted(students, key=lambda student: student[1])
+#sorted by age
+print(sorted_students) 
+```
+
+
 ## Nesting lists 
 
 ```python

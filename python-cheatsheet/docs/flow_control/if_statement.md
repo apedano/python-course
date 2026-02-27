@@ -41,4 +41,9 @@ if x > 5 and x < 20:
     print("x is between 5 and 20")
 ```
 
+## Inline condition with lamba
+
+```python
+A if condition else B
+```
 
