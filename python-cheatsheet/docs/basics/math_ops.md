@@ -1,4 +1,4 @@
-#  🐍Mathematical operations
+#  🐍 Mathematical operations
 
 ## Operators
 

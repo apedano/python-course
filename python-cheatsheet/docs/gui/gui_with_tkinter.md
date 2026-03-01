@@ -177,3 +177,12 @@ https://www.tcl-lang.org/man/tcl8.6/TkCmd/frame.htm
 |                                  |
 +----------------------------------+
 ```
+
+### Pomodoro timer
+
+* combining layouts
+* show images wiht `canvas`
+* use of timers
+* managing element within a parent (`Frame`)\
+
+[main.py](tomato/main.py)

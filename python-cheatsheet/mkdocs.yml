@@ -52,6 +52,7 @@ nav:
       - basics/variables.md
       - basics/data_types.md
       - basics/math_ops.md
+      - basics/time.md
   - Flow control:
       - flow_control/logical_operators.md
       - flow_control/if_statement.md
