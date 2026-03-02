@@ -81,6 +81,38 @@ input.pack()
 input.get()
 ```
 
+Set value
+
+```python
+#the index of insertion , can be END to append to the current value
+input.insert(0, "my_inserted_text")
+```
+Delete the content
+
+```python
+#From the start to the END of the input indexes
+input.delete(0, END)
+```
+
+## Dialog boxed
+
+https://runestone.academy/ns/books/published/thinkcspy/GUIandEventDrivenProgramming/02_standard_dialog_boxes.html
+
+```python
+from tkinter import messagebox
+
+messagebox.showinfo("Information","Informative message")
+```
+
+```python
+answer = messagebox.askokcancel("Confirm", "Do you want to save the password?")
+    if answer:
+        inserted_values = [input_ws.get(), input_user.get(), input_psw.get()]
+        ...
+    else:
+        print("User cancel")
+```
+
 ## Other widgets
 
 [other_widgets.py](other_widgets.py)
