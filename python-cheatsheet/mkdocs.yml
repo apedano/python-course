@@ -78,10 +78,15 @@ nav:
       - oop/packages.md
   - File formats:
       - file_formats/csv_format.md
+      - file_formats/json_files.md
   - Data Analysis:
       - data_analysis/pandas.md
   - GUI:
       - gui/gui_with_tkinter.md
+  - Applications:
+      - applications/emails.md
+  - Cloud:
+      - cloud/run_in_the_cloud.md
   - Itertools:
       - itertools/index.md
   - Async:
