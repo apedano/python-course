@@ -3,7 +3,6 @@ import string
 from tkinter import END
 import tkinter as tk
 import tkinter.messagebox as messagebox
-import json
 
 
 JOINER = " | "
@@ -13,8 +12,16 @@ CAPITAL_LETTERS = string.ascii_uppercase
 PASSWORD_LENGTH = 20
 PASSWORD_ELEMENTS = [SPECIAL_CHARACTERS, NUMBERS, CAPITAL_LETTERS]
 
+password_store = []
+
+password_store_record = {"ws":"sodiaj", "user-email":"sakudhsaiudh", "password":"soijdasio"}
+password_store.append(password_store_record)
+
 main_window = tk.Tk()
 main_window.title("Password manager")
+
+with open("password_store.txt", "a") as f:
+    pass
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
@@ -49,49 +56,17 @@ def validate_input(values: list[str]):
             return False
     return True
 
-def json_save_data():
-    new_data_dict = {
-        input_ws.get(): {
-            "email": input_user.get(),
-            "password": input_psw.get()
-        }
-    }
-    try:
-        with open("password_store.json", "r") as f:
-            data = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError) as e:
-        print(f"Error opening password store: {e}")
-        print("Creating empty store")
-        data = {}
-
-    data.update(new_data_dict)
-    with open("password_store.json", "w") as f:
-        json.dump(data, f, indent=4)
-
 def handle_add_password():
     inserted_values = [input_ws.get(), input_user.get(), input_psw.get()]
     if validate_input(inserted_values):
         answer = messagebox.askokcancel("Confirm", "Do you want to save the password?")
         if answer:
-            json_save_data()
+            with open("password_store.txt", "a") as f:
+                f.write(JOINER.join(inserted_values))
+                f.write("\n")
             reset_controls()
 
-
-def handle_search_ws():
-    try:
-        with open("password_store.json", "r") as f:
-            data = json.load(f)
-            value_to_search = input_ws.get()
-            if value_to_search in data.keys():
-                email = data[value_to_search]["email"]
-                password = data[value_to_search]["password"]
-                messagebox.showinfo("Website found", f"Email: {email}\nPassword: {password}")
-            else:
-                messagebox.showinfo("Website not found", f"{value_to_search} not found in passsword store")
-    except (FileNotFoundError, json.JSONDecodeError) as e:
-        messagebox.showerror("Error", "No valid Data file found")
-
-# ---------------------------- UI SETUP ------------------------------- #
+    # ---------------------------- UI SETUP ------------------------------- #
 
 
 
@@ -112,11 +87,9 @@ canvas.grid(row=0, column=2) #of 5 colums
 # --- WEBSITE label and input --- #
 label_ws=tk.Label(main_window, text="Website")
 label_ws.grid(row=1, column=0, sticky="w")
-input_ws= tk.Entry(main_window, width=30)
-input_ws.grid(row=1, column=1, columnspan=2, sticky="w")
+input_ws= tk.Entry(main_window, width=40)
+input_ws.grid(row=1, column=1, columnspan=3, sticky="w")
 input_ws.focus()
-button_search = tk.Button(main_window, text="Search", command=handle_search_ws)
-button_search.grid(row=1, column=3)
 
 # --- Email/User label and input --- #
 label_user=tk.Label(main_window, text="Email/Username")
@@ -131,7 +104,7 @@ label_psw.grid(row=3, column=0, sticky="w")
 input_psw= tk.Entry(main_window, width=30)
 input_psw.grid(row=3, column=1, columnspan=2, sticky="w")
 button_gen_pws = tk.Button(main_window, text="Generate", command=handle_generate_password)
-button_gen_pws.grid(row=3, column=3)
+button_gen_pws.grid(row=3, column=3, sticky="w")
 
 # --- Add button --- #
 button_gen_pws = tk.Button(main_window, text="Add", width=50, command=handle_add_password)

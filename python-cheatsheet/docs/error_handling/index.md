@@ -1,6 +1,6 @@
 # 🐍 Error handling
 
-## Bae exception handling
+## Base exception handling
 
 ```python
 try:
