@@ -36,7 +36,7 @@ service = build('gmail', 'v1', credentials=creds)
 # Create email
 message = EmailMessage()
 message.set_content("This email was sent using the Gmail REST API.")
-message["To"] = "alessandro.pedano@gmail.com"
+message["To"] = "silvia.pipitone89@gmail.com"
 message["From"] = "sample@gmail.com"
 message["Subject"] = "Test Email via Gmail API"
 
@@ -52,5 +52,5 @@ send_message = service.users().messages().send(
     userId="me",
     body=create_message
 ).execute()
-
+print(send_message)
 print(f"Message Id: {send_message['id']}")

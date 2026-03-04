@@ -66,6 +66,15 @@ my_button = tk.Button(text="Click me", command=lambda: print("I am clicked"))
 my_button.pack()
 ```
 
+Create a button with image only
+
+```python
+ # Creating a photoimage object to use image
+photo_true = PhotoImage(file=r"images/true.png")
+(Button(self.__window, text='', image=photo_true)
+ .grid(row=2, column=0, padx=20, pady=20))
+```
+
 ## Entry
 
 https://www.tcl-lang.org/man/tcl8.6/TkCmd/entry.htm
@@ -210,6 +219,32 @@ https://www.tcl-lang.org/man/tcl8.6/TkCmd/frame.htm
 +----------------------------------+
 ```
 
+## Working wiht canvas
+
+```python
+
+from tkinter import *
+import requests
+
+canvas = Canvas(width=300, height=414)
+background_img = PhotoImage(file="background.png")
+canvas.create_image(150, 207, image=background_img)
+#The first two parameters are the center x,y of the text
+quote_text = canvas.create_text(150, 207, text="Kanye Quote Goes HERE", width=250, font=("Arial", 30, "bold"), fill="white")
+canvas.grid(row=0, column=0)
+
+kanye_img = PhotoImage(file="kanye.png")
+kanye_button = Button(image=kanye_img, highlightthickness=0, command=get_quote)
+kanye_button.grid(row=1, column=0)
+```
+
+Change the content of an element
+```python
+quote_text_id = canvas.create_text(150, 207, text="Kanye Quote Goes HERE", width=250, font=("Arial", 30, "bold"), fill="white")
+
+canvas.itemconfig(quote_text_id, text="new text content")
+```
+
 ### Pomodoro timer
 
 * combining layouts
@@ -218,3 +253,50 @@ https://www.tcl-lang.org/man/tcl8.6/TkCmd/frame.htm
 * managing element within a parent (`Frame`)\
 
 [main.py](tomato/main.py)
+
+### Update the window content and properties after the `mainloop()` is called
+
+It is possible to update the widgets after the main loop method is running
+
+### Use `after`
+
+`after()` schedules a function to run while the main loop is active.
+
+```python
+import tkinter as tk
+
+def update_label():
+    label.config(text="Updated after 2 seconds!")
+
+root = tk.Tk()
+
+label = tk.Label(root, text="Waiting...")
+label.pack()
+
+# Call update_label after 2000 ms (2 seconds)
+root.after(2000, update_label)
+```
+
+### Call `update_idletasks()`
+
+Only updates layout and redraw tasks (safer than update()):
+
+```python
+ def show_answer(self, score: int, question_number:int, color:str) -> None:
+    self.__canvas_question.config(bg=color)
+    self.__label_status.config(text=f"Score: {score} / {question_number}")
+    # Force redraw (usually not even necessary)
+    self.__window.update_idletasks()
+```
+
+It is not necessary when the `itemconfig()` is called in the method
+
+```python
+def finish_quiz(self) -> None:
+    self.__canvas_category.itemconfig(self.__category_text_id, text="Quiz finished")
+    self.__canvas_question.itemconfig(self.__question_text_id, text="You can read the score above!")
+    self.__true_button.destroy()
+    self.__false_button.destroy()
+```
+
+

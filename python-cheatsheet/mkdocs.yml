@@ -81,6 +81,8 @@ nav:
       - file_formats/json_files.md
   - Data Analysis:
       - data_analysis/pandas.md
+  - Networking:
+      - networking/api.md
   - GUI:
       - gui/gui_with_tkinter.md
   - Applications:

@@ -209,6 +209,14 @@ add = lambda a, b: a + b
 print(add(3, 7))  # 10
 ```
 
+### Typed functions
+
+```python
+def extract_position(json_data: dict[str, dict[str, str]]) -> tuple[str, str]:
+    position = (json_data["iss_position"]["latitude"], json_data["iss_position"]["longitude"])
+    return position
+```
+
 ### High order functions
 
 Functions using other functions as parameters
