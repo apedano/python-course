@@ -83,6 +83,7 @@ nav:
       - data_analysis/pandas.md
   - Networking:
       - networking/api.md
+      - networking/authentication_methods.md
   - GUI:
       - gui/gui_with_tkinter.md
   - Applications:

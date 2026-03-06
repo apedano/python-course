@@ -38,4 +38,3 @@ sunset = response_json["results"]["sunset"]
 print(f"Sunrise: {sunrise}")
 print(f"Sunset: {sunset}")
 ```
-
