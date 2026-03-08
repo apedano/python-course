@@ -39,6 +39,11 @@ my_birthday_date = dt.date(1980, 7, 27)
 print(my_birthday_date) #1980-07-27
 ```
 
+### Calculate time difference
+
+```python
+three_days_ago = dt.date.today() - dt.timedelta(days=3)
+```
 
 ### Sleep
 

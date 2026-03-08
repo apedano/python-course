@@ -228,6 +228,15 @@ Common magic methods:
 
 ------------------------------------------------------------------------
 
+When the class belongs to a collection and the `print` method is called on it, the collection calls the `__repr__` instead of the `__str__`
+
+```python
+books = [Book("Title1"), Book("Title2")]
+
+print(books) #[<Book object at 0x7cac67ae7680>, <Book object at 0x7cac67998710>, <Book object at 0x7cac67edb560>]
+```
+
+
 ## 12. Composition
 
 Composition means using objects inside other objects.
