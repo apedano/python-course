@@ -88,6 +88,7 @@ nav:
       - gui/gui_with_tkinter.md
   - Applications:
       - applications/emails.md
+      - applications/telegram.md
   - Cloud:
       - cloud/run_in_the_cloud.md
   - Itertools:

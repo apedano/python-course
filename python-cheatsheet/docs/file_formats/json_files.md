@@ -1,5 +1,19 @@
 # 🐍 Working with JSON files
 
+## From str to JSON
+
+```python
+import json
+
+my_str = "{\"person\": {\"name\": \"Alessandro\", \"surname\": \"Pedano\", \"birth\": {\"city\": \"Palermo\", \"date\": \"1980-07-27\"}}}"
+
+person_dict = json.loads(my_str) #this is a dictionary
+
+print(person_dict["person"]["name"])
+```
+
+
+## Parsing Json files with `json.load()`
 With the build-in module `json` we can map json content to Python `dict` two ways 
 
 Suppose we have a file with the following content
@@ -18,8 +32,6 @@ Suppose we have a file with the following content
     }
 }
 ```
-
-## Read with `json.load()`
 
 ```python
 import json

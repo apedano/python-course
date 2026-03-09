@@ -1,0 +1,100 @@
+{
+  "_default": {
+    "1": {
+      "_type": "FlightSearchData",
+      "origin": "eindhoven",
+      "iata_code_origin": "EIN",
+      "destination": "palermo",
+      "iata_code_destination": "PMO",
+      "lowe_price": 50
+    },
+    "2": {
+      "_type": "FlightSearchData",
+      "origin": "eindhoven",
+      "iata_code_origin": "EIN",
+      "destination": "paris",
+      "iata_code_destination": "PAR",
+      "lowe_price": 100
+    },
+    "3": {
+      "_type": "FlightSearchData",
+      "origin": "eindhoven",
+      "iata_code_origin": "EIN",
+      "destination": "london",
+      "iata_code_destination": "LON",
+      "lowe_price": 150
+    },
+    "4": {
+      "_type": "FlightSearchData",
+      "origin": "eindhoven",
+      "iata_code_origin": "EIN",
+      "destination": "new york",
+      "iata_code_destination": "NYC",
+      "lowe_price": 400
+    },
+    "5": {
+      "_type": "FlightSearchData",
+      "origin": "weeze",
+      "iata_code_origin": "NRN",
+      "destination": "palermo",
+      "iata_code_destination": "PMO",
+      "lowe_price": 50
+    },
+    "6": {
+      "_type": "FlightSearchData",
+      "origin": "weeze",
+      "iata_code_origin": "NRN",
+      "destination": "paris",
+      "iata_code_destination": "PAR",
+      "lowe_price": 100
+    },
+    "7": {
+      "_type": "FlightSearchData",
+      "origin": "weeze",
+      "iata_code_origin": "NRN",
+      "destination": "london",
+      "iata_code_destination": "LON",
+      "lowe_price": 150
+    },
+    "8": {
+      "_type": "FlightSearchData",
+      "origin": "weeze",
+      "iata_code_origin": "NRN",
+      "destination": "new york",
+      "iata_code_destination": "NYC",
+      "lowe_price": 400
+    },
+    "9": {
+      "_type": "FlightSearchData",
+      "origin": "brussels",
+      "iata_code_origin": "BRU",
+      "destination": "palermo",
+      "iata_code_destination": "PMO",
+      "lowe_price": 50
+    },
+    "10": {
+      "_type": "FlightSearchData",
+      "origin": "brussels",
+      "iata_code_origin": "BRU",
+      "destination": "paris",
+      "iata_code_destination": "PAR",
+      "lowe_price": 100
+    },
+    "11": {
+      "_type": "FlightSearchData",
+      "origin": "brussels",
+      "iata_code_origin": "BRU",
+      "destination": "london",
+      "iata_code_destination": "LON",
+      "lowe_price": 150
+    },
+    "12": {
+      "_type": "FlightSearchData",
+      "origin": "brussels",
+      "iata_code_origin": "BRU",
+      "destination": "new york",
+      "iata_code_destination": "NYC",
+      "lowe_price": 400
+    }
+  }
+}

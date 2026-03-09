@@ -53,3 +53,31 @@ import time
 #argument is the number of seconds
 time.sleep(1)
 ````
+
+### Date time formatting `strftime`
+
+```python
+from datetime import datetime
+
+now = datetime.now()
+
+formatted = now.strftime("%Y-%m-%d %H:%M:%S")
+
+print(formatted)
+```
+
+| Code | Meaning       | Example |
+| ---- | ------------- | ------- |
+| `%Y` | 4-digit year  | 2026    |
+| `%y` | 2-digit year  | 26      |
+| `%m` | month (01–12) | 03      |
+| `%d` | day of month  | 09      |
+| `%H` | hour (24h)    | 15      |
+| `%I` | hour (12h)    | 03      |
+| `%M` | minute        | 42      |
+| `%S` | seconds       | 10      |
+| `%A` | weekday full  | Monday  |
+| `%a` | weekday short | Mon     |
+| `%B` | month full    | March   |
+| `%b` | month short   | Mar     |
+| `%p` | AM/PM         | PM      |

@@ -151,3 +151,29 @@ travel_log = {
 
 print(travel_log["Germany"]["cities_visited"][2])#Stuttgart
 ```
+
+### Expansion `**`
+
+`**data` expands the dictionary into keyword arguments.
+
+```python
+
+class User:
+    def __init__(self, name, age, role):
+        self.name = name
+        self.age = age
+        self.role = role
+
+
+data = {
+    "name": "Alice",
+    "age": 30,
+    "role": "Developer"
+}
+
+user = User(**data)
+
+print(user.name)
+print(user.role)
+```
+
