@@ -228,7 +228,9 @@ students = [
 
 sorted_students = sorted(students, key=lambda student: student[1])
 #sorted by age
-print(sorted_students) 
+print(sorted_students)
+
+sorted_students_decreasing = sorted(students, key=lambda student: student[1], reverse=True)
 ```
 
 

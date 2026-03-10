@@ -1,0 +1,5962 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT6H45M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "70.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "104.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "224.30",
+        "total": "224.30"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "52.00",
+            "currency": "EUR",
+            "total": "112.15"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "52.00",
+            "currency": "EUR",
+            "total": "112.15"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "2",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT12H55M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "70.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "104.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "236.28",
+        "total": "236.28"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "52.00",
+            "currency": "EUR",
+            "total": "118.14"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "52.00",
+            "currency": "EUR",
+            "total": "118.14"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "3",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT15H5M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "70.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "104.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "236.28",
+        "total": "236.28"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "52.00",
+            "currency": "EUR",
+            "total": "118.14"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "52.00",
+            "currency": "EUR",
+            "total": "118.14"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "4",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT15H15M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "70.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "104.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "238.70",
+        "total": "238.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "52.00",
+            "currency": "EUR",
+            "total": "119.35"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "52.00",
+            "currency": "EUR",
+            "total": "119.35"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "5",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT15H15M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "70.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "104.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "238.70",
+        "total": "238.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "52.00",
+            "currency": "EUR",
+            "total": "119.35"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "52.00",
+            "currency": "EUR",
+            "total": "119.35"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "6",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT15H15M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "70.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "104.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "238.70",
+        "total": "238.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "52.00",
+            "currency": "EUR",
+            "total": "119.35"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "52.00",
+            "currency": "EUR",
+            "total": "119.35"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "7",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H50M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "70.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "122.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "264.70",
+        "total": "264.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "61.00",
+            "currency": "EUR",
+            "total": "132.35"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "61.00",
+            "currency": "EUR",
+            "total": "132.35"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "8",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H50M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "70.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "122.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "264.70",
+        "total": "264.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "61.00",
+            "currency": "EUR",
+            "total": "132.35"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "61.00",
+            "currency": "EUR",
+            "total": "132.35"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "9",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT6H40M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "178.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "298.30",
+        "total": "298.30"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "89.00",
+            "currency": "EUR",
+            "total": "149.15"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "89.00",
+            "currency": "EUR",
+            "total": "149.15"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "10",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT12H45M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "178.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "310.28",
+        "total": "310.28"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "89.00",
+            "currency": "EUR",
+            "total": "155.14"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "89.00",
+            "currency": "EUR",
+            "total": "155.14"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "11",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT4H5M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "70.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "168.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "312.30",
+        "total": "312.30"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "84.00",
+            "currency": "EUR",
+            "total": "156.15"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "84.00",
+            "currency": "EUR",
+            "total": "156.15"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "12",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT4H40M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "196.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "324.30",
+        "total": "324.30"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "98.00",
+            "currency": "EUR",
+            "total": "162.15"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "98.00",
+            "currency": "EUR",
+            "total": "162.15"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "13",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H30M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "178.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "327.10",
+        "total": "327.10"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "89.00",
+            "currency": "EUR",
+            "total": "163.55"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "89.00",
+            "currency": "EUR",
+            "total": "163.55"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "14",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT7H30M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "196.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "338.70",
+        "total": "338.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "98.00",
+            "currency": "EUR",
+            "total": "169.35"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "98.00",
+            "currency": "EUR",
+            "total": "169.35"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "15",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT17H45M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "65.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "158.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "349.00",
+        "total": "349.00"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "79.00",
+            "currency": "EUR",
+            "total": "174.50"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "79.00",
+            "currency": "EUR",
+            "total": "174.50"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "16",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT19H55M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "65.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "158.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "349.00",
+        "total": "349.00"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "79.00",
+            "currency": "EUR",
+            "total": "174.50"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "79.00",
+            "currency": "EUR",
+            "total": "174.50"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "17",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H30M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 4,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "196.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "353.10",
+        "total": "353.10"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "98.00",
+            "currency": "EUR",
+            "total": "176.55"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "98.00",
+            "currency": "EUR",
+            "total": "176.55"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "18",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H30M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 5,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "212.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "377.10",
+        "total": "377.10"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "106.00",
+            "currency": "EUR",
+            "total": "188.55"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "106.00",
+            "currency": "EUR",
+            "total": "188.55"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "19",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT15H30M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "158.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "378.82",
+        "total": "378.82"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "79.00",
+            "currency": "EUR",
+            "total": "189.41"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "79.00",
+            "currency": "EUR",
+            "total": "189.41"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "20",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT17H40M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "158.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "378.82",
+        "total": "378.82"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "79.00",
+            "currency": "EUR",
+            "total": "189.41"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "79.00",
+            "currency": "EUR",
+            "total": "189.41"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "21",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT7H55M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "242.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "386.30",
+        "total": "386.30"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "193.15"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "193.15"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "22",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT7H10M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "242.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "398.28",
+        "total": "398.28"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "199.14"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "199.14"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "23",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT12H10M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "242.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "400.70",
+        "total": "400.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "200.35"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "200.35"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "24",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT12H10M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "242.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "400.70",
+        "total": "400.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "200.35"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "200.35"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "25",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT12H10M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "242.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "400.70",
+        "total": "400.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "200.35"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "200.35"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "26",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT15H35M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "65.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "154.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "413.30",
+        "total": "413.30"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "77.00",
+            "currency": "EUR",
+            "total": "206.65"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "77.00",
+            "currency": "EUR",
+            "total": "206.65"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LH"
+      ]
+    },
+    {
+      "id": "27",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT17H35M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "65.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "154.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "413.30",
+        "total": "413.30"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "77.00",
+            "currency": "EUR",
+            "total": "206.65"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "77.00",
+            "currency": "EUR",
+            "total": "206.65"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LH"
+      ]
+    },
+    {
+      "id": "28",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT14H20M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "70.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "252.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "422.30",
+        "total": "422.30"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "126.00",
+            "currency": "EUR",
+            "total": "211.15"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "126.00",
+            "currency": "EUR",
+            "total": "211.15"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "29",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT4H25M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "272.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "446.28",
+        "total": "446.28"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "136.00",
+            "currency": "EUR",
+            "total": "223.14"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "136.00",
+            "currency": "EUR",
+            "total": "223.14"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "30",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT16H55M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "272.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "446.28",
+        "total": "446.28"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "136.00",
+            "currency": "EUR",
+            "total": "223.14"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "136.00",
+            "currency": "EUR",
+            "total": "223.14"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "31",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT6H35M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "272.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "448.70",
+        "total": "448.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "136.00",
+            "currency": "EUR",
+            "total": "224.35"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "136.00",
+            "currency": "EUR",
+            "total": "224.35"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "32",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT6H35M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "272.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "448.70",
+        "total": "448.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "136.00",
+            "currency": "EUR",
+            "total": "224.35"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "136.00",
+            "currency": "EUR",
+            "total": "224.35"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "33",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT7H35M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-10",
+      "lastTicketingDateTime": "2026-03-10",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "238.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "453.78",
+        "total": "453.78"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "34",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H15M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-10",
+      "lastTicketingDateTime": "2026-03-10",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "238.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "453.78",
+        "total": "453.78"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "35",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H15M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-10",
+      "lastTicketingDateTime": "2026-03-10",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "238.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "453.78",
+        "total": "453.78"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "36",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT10H15M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-10",
+      "lastTicketingDateTime": "2026-03-10",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "238.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "453.78",
+        "total": "453.78"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "37",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT12H15M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-10",
+      "lastTicketingDateTime": "2026-03-10",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "238.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "453.78",
+        "total": "453.78"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "38",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H5M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-10",
+      "lastTicketingDateTime": "2026-03-10",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 4,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "238.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "453.78",
+        "total": "453.78"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "39",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT11H25M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-10",
+      "lastTicketingDateTime": "2026-03-10",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 4,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "238.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "453.78",
+        "total": "453.78"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "226.89"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "40",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT17H15M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "264.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "459.28",
+        "total": "459.28"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "132.00",
+            "currency": "EUR",
+            "total": "229.64"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "132.00",
+            "currency": "EUR",
+            "total": "229.64"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "SN"
+      ]
+    },
+    {
+      "id": "41",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT7H40M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-10",
+      "lastTicketingDateTime": "2026-03-10",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "238.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "465.76",
+        "total": "465.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "232.88"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "232.88"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "42",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H50M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-10",
+      "lastTicketingDateTime": "2026-03-10",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "238.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "465.76",
+        "total": "465.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "232.88"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "232.88"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "43",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT10H20M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-10",
+      "lastTicketingDateTime": "2026-03-10",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "238.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "465.76",
+        "total": "465.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "232.88"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "232.88"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "44",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT10H20M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-10",
+      "lastTicketingDateTime": "2026-03-10",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "238.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "465.76",
+        "total": "465.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "232.88"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "232.88"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "45",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT12H50M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-10",
+      "lastTicketingDateTime": "2026-03-10",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "238.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "465.76",
+        "total": "465.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "232.88"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "119.00",
+            "currency": "EUR",
+            "total": "232.88"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "46",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT7H40M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "216.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "468.82",
+        "total": "468.82"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "108.00",
+            "currency": "EUR",
+            "total": "234.41"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "108.00",
+            "currency": "EUR",
+            "total": "234.41"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "47",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT18H10M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "326.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "496.30",
+        "total": "496.30"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "163.00",
+            "currency": "EUR",
+            "total": "248.15"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "163.00",
+            "currency": "EUR",
+            "total": "248.15"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "48",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT7H40M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "242.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "530.82",
+        "total": "530.82"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "265.41"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "265.41"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "49",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H20M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "242.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "530.82",
+        "total": "530.82"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "265.41"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "265.41"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "50",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT11H40M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "242.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "530.82",
+        "total": "530.82"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "265.41"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "265.41"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "51",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT11H40M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "242.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "530.82",
+        "total": "530.82"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "265.41"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "265.41"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "52",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT9H20M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "242.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "555.56",
+        "total": "555.56"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "277.78"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "277.78"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "53",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT12H",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "242.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "555.56",
+        "total": "555.56"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "277.78"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "121.00",
+            "currency": "EUR",
+            "total": "277.78"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "54",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT7H40M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-20",
+      "lastTicketingDateTime": "2026-03-20",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "380.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "635.76",
+        "total": "635.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "190.00",
+            "currency": "EUR",
+            "total": "317.88"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "190.00",
+            "currency": "EUR",
+            "total": "317.88"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "55",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H50M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-20",
+      "lastTicketingDateTime": "2026-03-20",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "380.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "635.76",
+        "total": "635.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "190.00",
+            "currency": "EUR",
+            "total": "317.88"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "190.00",
+            "currency": "EUR",
+            "total": "317.88"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "56",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT10H20M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-20",
+      "lastTicketingDateTime": "2026-03-20",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "380.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "635.76",
+        "total": "635.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "190.00",
+            "currency": "EUR",
+            "total": "317.88"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "190.00",
+            "currency": "EUR",
+            "total": "317.88"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "57",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT10H20M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-20",
+      "lastTicketingDateTime": "2026-03-20",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "35.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "380.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "635.76",
+        "total": "635.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "190.00",
+            "currency": "EUR",
+            "total": "317.88"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "190.00",
+            "currency": "EUR",
+            "total": "317.88"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "58",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H55M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "70.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "458.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "670.28",
+        "total": "670.28"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "False"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "229.00",
+            "currency": "EUR",
+            "total": "335.14"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "229.00",
+            "currency": "EUR",
+            "total": "335.14"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "59",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "338.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "703.56",
+        "total": "703.56"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "169.00",
+            "currency": "EUR",
+            "total": "351.78"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "169.00",
+            "currency": "EUR",
+            "total": "351.78"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "60",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT14H",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "338.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "703.56",
+        "total": "703.56"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "169.00",
+            "currency": "EUR",
+            "total": "351.78"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "169.00",
+            "currency": "EUR",
+            "total": "351.78"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "LX"
+      ]
+    },
+    {
+      "id": "61",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT7H35M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "532.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "744.28",
+        "total": "744.28"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "266.00",
+            "currency": "EUR",
+            "total": "372.14"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "266.00",
+            "currency": "EUR",
+            "total": "372.14"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "62",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT12H5M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "508.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "759.28",
+        "total": "759.28"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "254.00",
+            "currency": "EUR",
+            "total": "379.64"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "254.00",
+            "currency": "EUR",
+            "total": "379.64"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "SN"
+      ]
+    },
+    {
+      "id": "63",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT11H25M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "532.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "761.10",
+        "total": "761.10"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "266.00",
+            "currency": "EUR",
+            "total": "380.55"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "266.00",
+            "currency": "EUR",
+            "total": "380.55"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "64",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT11H25M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "75.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "532.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "761.10",
+        "total": "761.10"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "266.00",
+            "currency": "EUR",
+            "total": "380.55"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "266.00",
+            "currency": "EUR",
+            "total": "380.55"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AZ"
+      ]
+    },
+    {
+      "id": "65",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT12H15M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "668.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "802.98",
+        "total": "802.98"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "334.00",
+            "currency": "EUR",
+            "total": "401.49"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "334.00",
+            "currency": "EUR",
+            "total": "401.49"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "UX"
+      ]
+    },
+    {
+      "id": "66",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT12H15M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-11",
+      "lastTicketingDateTime": "2026-03-11",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "668.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "802.98",
+        "total": "802.98"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "334.00",
+            "currency": "EUR",
+            "total": "401.49"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "334.00",
+            "currency": "EUR",
+            "total": "401.49"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "UX"
+      ]
+    },
+    {
+      "id": "67",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT4H40M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-13",
+      "lastTicketingDateTime": "2026-03-13",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 3,
+      "oneWay": "False",
+      "price": {
+        "base": "596.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "842.80",
+        "total": "842.80"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "298.00",
+            "currency": "EUR",
+            "total": "421.40"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "298.00",
+            "currency": "EUR",
+            "total": "421.40"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "SN"
+      ]
+    },
+    {
+      "id": "68",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT9H55M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-25",
+      "lastTicketingDateTime": "2026-03-25",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "598.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "937.48",
+        "total": "937.48"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "299.00",
+            "currency": "EUR",
+            "total": "468.74"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "299.00",
+            "currency": "EUR",
+            "total": "468.74"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "TK"
+      ]
+    },
+    {
+      "id": "69",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT6H35M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-25",
+      "lastTicketingDateTime": "2026-03-25",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "1506.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "1759.70",
+        "total": "1759.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "753.00",
+            "currency": "EUR",
+            "total": "879.85"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "753.00",
+            "currency": "EUR",
+            "total": "879.85"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "SN"
+      ]
+    },
+    {
+      "id": "70",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT6H35M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-25",
+      "lastTicketingDateTime": "2026-03-25",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "1506.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "1759.70",
+        "total": "1759.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "753.00",
+            "currency": "EUR",
+            "total": "879.85"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "753.00",
+            "currency": "EUR",
+            "total": "879.85"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "SN"
+      ]
+    },
+    {
+      "id": "71",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT7H30M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-25",
+      "lastTicketingDateTime": "2026-03-25",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "1506.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "1759.70",
+        "total": "1759.70"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "753.00",
+            "currency": "EUR",
+            "total": "879.85"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "753.00",
+            "currency": "EUR",
+            "total": "879.85"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "SN"
+      ]
+    },
+    {
+      "id": "72",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H45M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-25",
+      "lastTicketingDateTime": "2026-03-25",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "1506.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "1765.88",
+        "total": "1765.88"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "753.00",
+            "currency": "EUR",
+            "total": "882.94"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "753.00",
+            "currency": "EUR",
+            "total": "882.94"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "SN"
+      ]
+    },
+    {
+      "id": "73",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT7H10M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-25",
+      "lastTicketingDateTime": "2026-03-25",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "1506.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "1883.16",
+        "total": "1883.16"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "753.00",
+            "currency": "EUR",
+            "total": "941.58"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "753.00",
+            "currency": "EUR",
+            "total": "941.58"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "SN"
+      ]
+    },
+    {
+      "id": "74",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT8H",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-25",
+      "lastTicketingDateTime": "2026-03-25",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "base": "2964.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "3278.76",
+        "total": "3278.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "1482.00",
+            "currency": "EUR",
+            "total": "1639.38"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "1482.00",
+            "currency": "EUR",
+            "total": "1639.38"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "75",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT10H20M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-25",
+      "lastTicketingDateTime": "2026-03-25",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 9,
+      "oneWay": "False",
+      "price": {
+        "additionalServices": [
+          {
+            "amount": "50.00",
+            "type": "CHECKED_BAGS"
+          }
+        ],
+        "base": "3274.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "3618.96",
+        "total": "3618.96"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "1637.00",
+            "currency": "EUR",
+            "total": "1809.48"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "1637.00",
+            "currency": "EUR",
+            "total": "1809.48"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    },
+    {
+      "id": "76",
+      "instantTicketingRequired": "False",
+      "isUpsellOffer": "False",
+      "itineraries": [
+        {
+          "duration": "PT9H25M",
+          "segments": [
+            {"name":"segment"}
+          ]
+        }
+      ],
+      "lastTicketingDate": "2026-03-25",
+      "lastTicketingDateTime": "2026-03-25",
+      "nonHomogeneous": "False",
+      "numberOfBookableSeats": 4,
+      "oneWay": "False",
+      "price": {
+        "base": "3432.00",
+        "currency": "EUR",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "3718.76",
+        "total": "3718.76"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": "True"
+      },
+      "source": "GDS",
+      "travelerPricings": [
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "1716.00",
+            "currency": "EUR",
+            "total": "1859.38"
+          },
+          "travelerId": "1",
+          "travelerType": "ADULT"
+        },
+        {
+          "fareDetailsBySegment": [
+            {"name":"segment"}
+          ],
+          "fareOption": "STANDARD",
+          "price": {
+            "base": "1716.00",
+            "currency": "EUR",
+            "total": "1859.38"
+          },
+          "travelerId": "2",
+          "travelerType": "ADULT"
+        }
+      ],
+      "type": "flight-offer",
+      "validatingAirlineCodes": [
+        "AF"
+      ]
+    }
+  ],
+  "dictionaries": {
+    "aircraft": {
+      "221": "AIRBUS  A220-100",
+      "223": "AIRBUS  A220-300",
+      "295": "EMBRAER 195 E2",
+      "319": "AIRBUS A319",
+      "320": "AIRBUS A320",
+      "321": "AIRBUS A321",
+      "32B": "AIRBUS A321 (SHARKLETS)",
+      "32N": "AIRBUS A320NEO",
+      "32Q": "AIRBUS A321NEO",
+      "32S": "AIRBUS INDUSTRIE A318/A319/A320/A321",
+      "73H": "BOEING 737-800 (WINGLETS)",
+      "73W": "BOEING 737-700 (WINGLETS)",
+      "7M8": "BOEING 737 MAX 8",
+      "E7W": "EMBRAER 175 (ENHANCED WINGLETS)",
+      "E90": "EMBRAER 190"
+    },
+    "carriers": {
+      "AF": "AIR FRANCE",
+      "AZ": "ITA AIRWAYS",
+      "KL": "KLM ROYAL DUTCH AIRLINES",
+      "LH": "LUFTHANSA",
+      "LX": "SWISS INTERNATIONAL AIR LINES",
+      "SN": "BRUSSELS AIRLINES",
+      "TK": "TURKISH AIRLINES",
+      "UX": "AIR EUROPA",
+      "WK": "EDELWEISS AIR",
+      "XZ": "AEROITALIA SRL"
+    },
+    "currencies": {
+      "EUR": "EURO"
+    },
+    "locations": {
+      "AMS": {
+        "cityCode": "AMS",
+        "countryCode": "NL"
+      },
+      "BRU": {
+        "cityCode": "BRU",
+        "countryCode": "BE"
+      },
+      "CDG": {
+        "cityCode": "PAR",
+        "countryCode": "FR"
+      },
+      "FCO": {
+        "cityCode": "ROM",
+        "countryCode": "IT"
+      },
+      "FRA": {
+        "cityCode": "FRA",
+        "countryCode": "DE"
+      },
+      "GVA": {
+        "cityCode": "GVA",
+        "countryCode": "CH"
+      },
+      "IST": {
+        "cityCode": "IST",
+        "countryCode": "TR"
+      },
+      "LIN": {
+        "cityCode": "MIL",
+        "countryCode": "IT"
+      },
+      "MAD": {
+        "cityCode": "MAD",
+        "countryCode": "ES"
+      },
+      "MXP": {
+        "cityCode": "MIL",
+        "countryCode": "IT"
+      },
+      "NCE": {
+        "cityCode": "NCE",
+        "countryCode": "FR"
+      },
+      "PMO": {
+        "cityCode": "PMO",
+        "countryCode": "IT"
+      },
+      "VCE": {
+        "cityCode": "VCE",
+        "countryCode": "IT"
+      },
+      "ZRH": {
+        "cityCode": "ZRH",
+        "countryCode": "CH"
+      }
+    }
+  },
+  "meta": {
+    "count": 76,
+    "links": {
+      "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=BRU&destinationLocationCode=PMO&departureDate=2026-03-25&adults=2"
+    }
+  }
+}

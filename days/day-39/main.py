@@ -37,9 +37,19 @@ flight_search_data = dm.get_all_flight_search_data()
 # for data in flight_search_data:
 #
 #     print(data)
-for flight_data in flight_search_data:
-    print(f"Searching flights from {flight_data.origin} to {flight_data.destination}...")
-    print(f"Found {flight_search.search_flight(flight_data)} flights.")
+# for flight_data in flight_search_data:
+#     print(f"Searching flights from {flight_data.origin} to {flight_data.destination}...")
+#     print(f"Found {flight_search.search_flight(flight_data)} flights.")
 
+import json
+with open("response.json", "r") as data_json_file:
+    data_json = json.load(data_json_file)
 
+data = data_json["data"]
+
+sorted_data = sorted(data, key=lambda single_data: float(single_data["price"]["grandTotal"]))
+first_three_data = sorted_data[:3]
+
+for sorted_flight in first_three_data:
+    print(sorted_flight["price"]["grandTotal"])
 

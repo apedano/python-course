@@ -63,6 +63,7 @@ class FlightSearch:
         response.raise_for_status()
         response_json = response.json()
         count = response_json["meta"]["count"]
+
         return count
 
 

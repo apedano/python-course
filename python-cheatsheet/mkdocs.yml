@@ -79,6 +79,9 @@ nav:
   - File formats:
       - file_formats/csv_format.md
       - file_formats/json_files.md
+  - Persistence:
+      - persistence/index.md
+      - persistence/tinydb.md
   - Data Analysis:
       - data_analysis/pandas.md
   - Networking:
