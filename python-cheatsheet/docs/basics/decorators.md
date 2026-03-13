@@ -130,6 +130,9 @@ say_hi()
 The output is  
 ```['HELLO', 'THERE']```
 
+![decorators_diagram.png](images/decorators_diagram.png)
+
+
 ## Decorators accepting arguments
 
 ```python
