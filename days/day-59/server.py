@@ -2,7 +2,7 @@ import datetime
 import random
 
 import requests
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 def load_posts():
     response = requests.get("https://api.npoint.io/74667564fb06136648b8")
@@ -16,9 +16,21 @@ blog_posts = load_posts()
 def homepage():
     return render_template("index.html", posts=blog_posts)
 
-@app.route("/contact")
+
+@app.route("/contact", methods=["GET", "POST"])
 def contact_page():
-    return render_template("contact.html")
+    error = None
+    data = {}
+
+    if request.method == 'POST':
+        data["name"] = request.form.get("name")
+        data["email"] = request.form.get("email")
+        if request.form.get("message") is None or request.form.get("message") == "":
+            error = "Please enter a message"
+        else :
+            data["message"] = request.form.get("message")
+    return render_template("contact.html", submitted_data=data, error=error)
+
 
 @app.route("/post/<int:post_id>")
 def post_page(post_id):

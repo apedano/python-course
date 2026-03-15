@@ -320,3 +320,280 @@ with app.test_request_context():
     print(url_for('login', next='/'))
     print(url_for('profile', username='John Doe'))
 ```
+
+## Templating html pages
+
+We can define a base structure for multiple pages, with common parts
+on separate html files and make the children pages define the specific parts only. 
+
+### Base template
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    ...
+    <!--    Url for static resource-->
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+{% include "navbar.html" %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% include "footer.html" %}
+
+...
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+</body>
+</html>
+```
+
+### Sub parts included
+
+`{% include "navbar.html" %}`
+
+file `navbar.html` 
+
+```html
+<nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+    <div class="container px-4 px-lg-5">
+
+        ...
+
+    </div>
+</nav>
+```
+
+it is the same for the other `include`
+
+``{% include "footer.html" %}``
+
+### Customizable parts as ``{% block <name> %}``
+
+```html
+{% block header %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+```
+
+### Html files defining the blocks
+
+A file can be built as **extension** of the `base.html` file
+
+```html
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block header %}
+
+<header class="masthead"
+    <!-- Some html content for the header-->
+</header>
+
+{% endblock %}
+
+{% block content %}
+
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+    <!-- Some html content for the content-->
+</div>
+
+{% endblock %}
+```
+
+### Process data from a form with POST actions
+
+We can define a POST method handler in Flask which 
+has access to a `request` object containing the fields as form data in
+the request itself
+
+https://flask.palletsprojects.com/en/stable/quickstart/#the-request-object
+
+form sample
+
+```html
+<!--Without the action attribute the post will happen on the same url-->
+<form novalidate method="post">
+  <input class="form-control" name="name" type="text" placeholder="Enter your name..." required/>
+  <input class="form-control" name="email" type="text" placeholder="Enter your email.." required/>
+  {% if submitted_data and error == None %}
+  <div id="submitSuccessMessage">
+      <div class="text-center mb-3">
+          <ul>
+              <li>{{ submitted_data["name"]}}</li>
+              <li>{{ submitted_data["email"]}}</li>
+          </ul>
+      </div>
+  </div>
+  {% endif %}
+  <!-- Submit error message-->
+  <!---->
+  <!-- This is what your users will see when there is-->
+  <!-- an error submitting the form-->
+  {% if error %}
+  <div id="submitErrorMessage">
+      <div class="text-center text-danger mb-3">Error: {{ error }}</div>
+  </div>
+  {% endif %}
+  <button class="btn btn-primary text-uppercase" type="submit">Send</button>
+  
+</form>
+```
+
+```python
+@app.route("/contact", methods=["GET", "POST"])
+def contact_page():
+    error = None
+    data = {}
+
+    if request.method == 'POST':
+        data["name"] = request.form.get("name")
+        data["email"] = request.form.get("email")
+        if request.form.get("message") is None or request.form.get("message") == "":
+            error = "Please enter a message"
+        else :
+            data["message"] = request.form.get("message")
+    return render_template("contact.html", submitted_data=data, error=error)
+```
+
+
+## Using WTForms with Flask-WTF
+
+https://wtforms.readthedocs.io/en/3.0.x/
+
+WTForms is a flexible forms validation and rendering library for Python web development. It can work with whatever web framework and template engine you choose. It supports data validation, CSRF protection, internationalization (I18N), and more. 
+
+### Installation
+
+```pip install Flask-WTF```
+
+### Create a form
+
+https://flask-wtf.readthedocs.io/en/1.0.x/quickstart/
+
+https://wtforms.readthedocs.io/en/3.0.x/fields/#basic-fields
+
+A form can be defined as a class
+
+```python
+from flask import Flask, render_template, redirect, url_for
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField, SelectField
+from wtforms.validators import DataRequired, URL
+
+#This is used for the csrf token in the form in the html file
+app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+
+class CafeForm(FlaskForm):
+    cafe = StringField('Cafe name', validators=[DataRequired()])
+    location = StringField("Cafe Location on Google Maps (URL)", validators=[DataRequired(), URL()])
+    open = StringField("Opening Time e.g. 8AM", validators=[DataRequired()])
+    close = StringField("Closing Time e.g. 5:30PM", validators=[DataRequired()])
+    coffee_rating = SelectField("Coffee Rating", choices=["☕️", "☕☕", "☕☕☕", "☕☕☕☕", "☕☕☕☕☕"], validators=[DataRequired()])
+    wifi_rating = SelectField("Wifi Strength Rating", choices=["✘", "💪", "💪💪", "💪💪💪", "💪💪💪💪", "💪💪💪💪💪"], validators=[DataRequired()])
+    power_rating = SelectField("Power Socket Availability", choices=["✘", "🔌", "🔌🔌", "🔌🔌🔌", "🔌🔌🔌🔌", "🔌🔌🔌🔌🔌"], validators=[DataRequired()])
+    submit = SubmitField('Submit')
+
+app.route('/add', methods=["GET", "POST"])
+def add_cafe():
+    form = CafeForm()
+    if form.validate_on_submit():
+        with open("cafe-data.csv", mode="a", encoding='utf-8') as csv_file:
+            csv_file.write(f"\n{form.cafe.data},"
+                           f"{form.location.data},"
+                           f"{form.open.data},"
+                           f"{form.close.data},"
+                           f"{form.coffee_rating.data},"
+                           f"{form.wifi_rating.data},"
+                           f"{form.power_rating.data}")
+        return redirect(url_for('cafes'))
+    return render_template('add.html', form=form)
+```
+
+The form can be rendered in the html file
+
+```html
+<form method="POST" action="{{ url_for('login_page') }}" novalidate>
+    {{ form.csrf_token }}
+    <!-- For each field in the form -->
+    <p>
+    {{ form.<field_name>.label }} <br> {{ form.<field_name>(size=30) }}
+        {% for error in form.<field_name>.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+    </p>
+    
+    {{ form.submit }}
+</form>
+```
+
+#### Add support for ``bootstrap-flask``
+
+``pip install boostrap-flask``
+
+Add to main.py
+
+```python
+from flask_bootstrap import Bootstrap5
+
+app = Flask(__name__)
+
+bootstrap = Bootstrap5(app) # initialise bootstrap-flask
+```
+In the `base.html`
+
+```html
+<head>
+    {% block styles %}
+    <!-- Load Bootstrap-Flask CSS here -->
+    {{ bootstrap.load_css() }}
+    <!-- Link to the styles.css here to apply styling to all the child templates.-->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    {% endblock %}
+  ...
+<head>
+```
+
+#### Use the bootstrap ``render_form()``
+
+This allows to rendere the labels, input and error tags of the form with one directive
+
+```html
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+      <h1>Add a new cafe into the database</h1>
+
+      {{ render_form(form, novalidate=True) }}
+
+      <p class="space-above">
+        <a href="{{ url_for('cafes') }}">See all cafes</a>
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+```
+
+
