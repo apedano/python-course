@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+  </head>
+  <body>
+    <h1>My Library</h1>
+    {% if not book %}
+      <p>No book found</p>
+    {% else %}
+    <p>{{book.title}} - <i>{{book.author}}</i></p>
+    <form method="POST" action="{{ url_for('change_rating_page', book_id=book.id) }}" novalidate>
+    {{ form.csrf_token }}
+    <!-- For each field in the form -->
+    <p>
+        {{ form.rating.label }} <br> {{ form.rating }}
+        {% for error in form.rating.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+
+    {{ form.submit }}
+    </form>
+    {% endif %}
+
+
+    <a href="{{ url_for('add') }}">Add New Book</a>
+
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+  </head>
+  <body>
+    <h1>My Library</h1>
+    {% if not book %}
+      <p>No book found</p>
+    {% else %}
+    <p>{{ book.title }} - <i>{{ book.author}}</i> - {{ book.rating}}/10</p>
+    <p>Do you want to delete this book?</p>
+    <form action="{{ url_for('delete_page', book_id=book.id) }}" method="POST">
+        <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
+    {% endif %}
+
+
+    <a href="{{ url_for('add') }}">Add New Book</a>
+
+  </body>
+</html>

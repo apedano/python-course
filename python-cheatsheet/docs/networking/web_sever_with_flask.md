@@ -499,30 +499,61 @@ from wtforms.validators import DataRequired, URL
 #This is used for the csrf token in the form in the html file
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 
-class CafeForm(FlaskForm):
-    cafe = StringField('Cafe name', validators=[DataRequired()])
-    location = StringField("Cafe Location on Google Maps (URL)", validators=[DataRequired(), URL()])
-    open = StringField("Opening Time e.g. 8AM", validators=[DataRequired()])
-    close = StringField("Closing Time e.g. 5:30PM", validators=[DataRequired()])
-    coffee_rating = SelectField("Coffee Rating", choices=["☕️", "☕☕", "☕☕☕", "☕☕☕☕", "☕☕☕☕☕"], validators=[DataRequired()])
-    wifi_rating = SelectField("Wifi Strength Rating", choices=["✘", "💪", "💪💪", "💪💪💪", "💪💪💪💪", "💪💪💪💪💪"], validators=[DataRequired()])
-    power_rating = SelectField("Power Socket Availability", choices=["✘", "🔌", "🔌🔌", "🔌🔌🔌", "🔌🔌🔌🔌", "🔌🔌🔌🔌🔌"], validators=[DataRequired()])
+class BookForm(FlaskForm):
+    title = StringField('Book title', validators=[DataRequired(), Length(1, 64)])
+    author = StringField("The author", validators=[DataRequired(), Length(1, 64)])
+    rating = SelectField(
+        "Rate the book",
+        choices=[(str(i), str(i)) for i in range(1, 10)],
+        coerce=int
+    )
     submit = SubmitField('Submit')
 
-app.route('/add', methods=["GET", "POST"])
-def add_cafe():
-    form = CafeForm()
+class ChangeBookRating(FlaskForm):
+    rating = SelectField(
+        "Rate the book",
+        choices=[(str(i), str(i)) for i in range(1, 10)],
+        coerce=int
+    )
+    submit = SubmitField('Submit')
+
+
+@app.route("/add", methods=["GET", "POST"])
+def add():
+    form = BookForm()
     if form.validate_on_submit():
-        with open("cafe-data.csv", mode="a", encoding='utf-8') as csv_file:
-            csv_file.write(f"\n{form.cafe.data},"
-                           f"{form.location.data},"
-                           f"{form.open.data},"
-                           f"{form.close.data},"
-                           f"{form.coffee_rating.data},"
-                           f"{form.wifi_rating.data},"
-                           f"{form.power_rating.data}")
-        return redirect(url_for('cafes'))
-    return render_template('add.html', form=form)
+        try:
+            new_book = Book(
+                title=form.title.data,
+                author=form.author.data,
+                rating=form.rating.data
+            )
+            db.session.add(new_book)
+            db.session.commit()  # needed to persist the data
+            return redirect(url_for("home"))
+        except:
+            db.session.rollback()
+            return redirect(url_for("home"))
+    return render_template("add.html", form=form)
+
+
+```
+
+Prefill form inputs with data class instance
+
+```python
+@app.route("/change_rating/<int:book_id>", methods=["GET", "POST"])
+def change_rating_page(book_id):
+    book = db.session.get(Book, book_id)
+    form = ChangeBookRating(obj=book)
+    if request.method == "GET":
+        return render_template("change_rating.html", form=form, book=book)
+    else:
+        db.session.query(Book).filter_by(id=book_id).update({
+            Book.rating: form.rating.data
+        })
+        db.session.commit()
+        return redirect(url_for("home"))
 ```
 
 The form can be rendered in the html file
@@ -540,6 +571,56 @@ The form can be rendered in the html file
     
     {{ form.submit }}
 </form>
+```
+
+#### Use custom field validators
+
+The validator function is
+```python
+def validate_<fieldname>(self, field):
+    pass
+```
+So, if we want to add validation to the `title` field we have to create a function `validate_title`
+
+Updated form
+```python
+from wtforms.validators import ValidationError
+
+class BookForm(FlaskForm):
+    title = StringField('Book title', validators=[DataRequired(), Length(1, 64)])
+    author = StringField("The author", validators=[DataRequired(), Length(1, 64)])
+    rating = SelectField("Rate the book", choices=range(1,10), validators=[DataRequired()])
+    submit = SubmitField('Submit')
+
+    def validate_title(self, field):
+        existing_book = db.session.query(Book).filter_by(title=field.data).first()
+        if existing_book:
+            raise ValidationError("This book already exists in the database.")
+```
+
+When you call:
+
+`form.validate_on_submit()` 
+WTForms will:
+
+Loop over all fields in the form
+  * Run built-in validators (DataRequired, Length)
+  * Look for a method named `validate_<fieldname>`
+
+Then automatically call:
+
+`validate_title(self, field)`
+
+If a `ValidationError` is raised → form is invalid
+
+To show the error
+```python
+{{ form.title.label }}
+{{ form.title(class="form-control") }}
+
+{% for error in form.title.errors %}
+  <div class="text-danger">{{ error }}</div>
+{% endfor %}
 ```
 
 #### Add support for ``bootstrap-flask``

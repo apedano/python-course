@@ -84,6 +84,7 @@ nav:
   - Persistence:
       - persistence/index.md
       - persistence/tinydb.md
+      - persistence/sqlite.md
   - Data Analysis:
       - data_analysis/pandas.md
   - Networking:
