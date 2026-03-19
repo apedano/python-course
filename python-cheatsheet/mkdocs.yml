@@ -91,6 +91,7 @@ nav:
       - networking/api.md
       - networking/authentication_methods.md
       - networking/web_sever_with_flask.md
+      - networking/rest_services.md
   - GUI:
       - gui/gui_with_tkinter.md
   - Applications:
