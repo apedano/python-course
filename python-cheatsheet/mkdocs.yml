@@ -97,8 +97,9 @@ nav:
   - Applications:
       - applications/emails.md
       - applications/telegram.md
-  - Cloud:
+  - Deployment:
       - cloud/run_in_the_cloud.md
+      - gitops/deployment.md
   - Itertools:
       - itertools/index.md
   - Async:
