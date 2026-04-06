@@ -47,3 +47,5 @@ plugins:
 nav:
   - Data Analysis:
       - data_analysis/pandas.md
+  - Plotting:
+      - plotting/matplotlib.md

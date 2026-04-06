@@ -9,9 +9,29 @@ python3 -m pip install pandas
 ```
 ## Formating data
 
+### Define formatting for pandas
+Float formatting
+
 ```python
+#Example for money
 pd.options.display.float_format = '{:,.2f}'.format 
 ```
+
+### Define formatting for single DataFrame
+
+
+1. Converting String to DateTime (Parsing)
+```python
+#Pandas usually detects standard ISO 8601 format (YYYY-MM-DD) 
+df['date'] = pd.to_datetime(df['date'])
+
+type(df.date[1]) #pandas._libs.tslibs.timestamps.Timestamp
+
+#Or custom format
+df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')
+```
+2. Change displaying
+
 
 ## Read CSV
 
@@ -116,6 +136,7 @@ print(type(data))  # <class 'pandas.DataFrame'>
 | df.head(n)            | First n rows (default 5)               | df.head()                                      |
 | df.tail(n)            | Last n rows                            | df.tail(10)                                    |
 | df.shape              | Number of rows and columns             | df.shape                                       |
+| df.count()            | Number entries per column              | df.count()                                     |
 | df.columns            | Column names                           | df.columns                                     |
 | df.dtypes             | Data types of columns                  | df.dtypes                                      |
 | df.info()             | Summary of DataFrame (types, nulls)    | df.info()                                      |
@@ -138,6 +159,94 @@ print(type(data))  # <class 'pandas.DataFrame'>
 | df.sample(n)          | Random sample of rows                  | df.sample(5)                                   |
 | df.sort_values()      | Sort by column                         | clean_df.sort_values('Spread', ascending=True) |
 | df.groupby()          | Group data for aggregation             | df.groupby("city").mean()                      |
+
+### Pivoting DataFrame
+
+📥 Sample Data
+
+```python
+import pandas as pd
+
+data = {
+    "date": ["2024-01-01", "2024-01-01", "2024-01-02", "2024-01-02"],
+    "city": ["Amsterdam", "Rotterdam", "Amsterdam", "Rotterdam"],
+    "sales": [100, 150, 200, 250]
+}
+
+df = pd.DataFrame(data)
+print(df)
+```
+Output
+```
+         date       city  sales
+0  2024-01-01  Amsterdam    100
+1  2024-01-01  Rotterdam    150
+2  2024-01-02  Amsterdam    200
+3  2024-01-02  Rotterdam    250
+```
+
+🔁 Pivot the Data
+
+```python
+pivot_df = df.pivot(index="date", columns="city", values="sales")
+print(pivot_df)
+```
+```
+city        Amsterdam  Rotterdam
+date                           
+2024-01-01        100        150
+2024-01-02        200        250
+```
+
+Explanation
+index → rows (date)
+columns → new columns (city)
+values → cell values (sales)
+
+Bonus: Using pivot_table (handles duplicates)
+
+```python
+pivot_table_df = df.pivot_table(
+    index="date",
+    columns="city",
+    values="sales",
+    aggfunc="sum"
+)
+```
+
+#### Handling `NaN` 
+For missing values, the pivot table will have `NaN`, we can replace it with
+
+```python
+df_pivot = df.pivot(index="Date", columns="TagName", values="NumTags")
+print(df_pivot.head())
+```
+```
+agName     assembly      c      c#    c++  delphi  go    java  javascript  \
+Date                                                                         
+2008-07-01       NaN    NaN     3.0    NaN     NaN NaN     NaN         NaN   
+2008-08-01       8.0   82.0   503.0  164.0    13.0 NaN   220.0       160.0   
+2008-09-01      28.0  320.0  1637.0  749.0   104.0 NaN  1121.0       629.0   
+2008-10-01      16.0  302.0  1982.0  804.0   112.0 NaN  1142.0       720.0   
+2008-11-01      16.0  257.0  1728.0  733.0   139.0 NaN   951.0       581.0   
+
+```
+
+
+```python
+df_pivot.fillna(0, inplace=True)
+print(df_pivot.head())
+```
+
+```
+TagName     assembly      c      c#    c++  delphi   go    java  javascript  \
+Date                                                                          
+2008-07-01       0.0    0.0     3.0    0.0     0.0  0.0     0.0         0.0   
+2008-08-01       8.0   82.0   503.0  164.0    13.0  0.0   220.0       160.0   
+2008-09-01      28.0  320.0  1637.0  749.0   104.0  0.0  1121.0       629.0   
+2008-10-01      16.0  302.0  1982.0  804.0   112.0  0.0  1142.0       720.0   
+2008-11-01      16.0  257.0  1728.0  733.0   139.0  0.0   951.0       581.0   
+```
 
 ### `Series`
 
@@ -418,3 +527,10 @@ This gives the mean mid career salary per group
 ```python
 clean_df.groupby('Group')['Mid-Career Median Salary'].mean()
 ```
+
+It sums the values for each column on the grouped data frame 
+```python
+cdf.groupby('TagName').sum()
+```
+
+
