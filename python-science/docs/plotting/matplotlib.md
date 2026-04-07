@@ -89,3 +89,48 @@ plt.show()
 * `.ylabel()` - add text to the y-axis
 * `.ylim()` - allows us to set a lower and upper bound
 
+### Smooth the curves with rolling mean
+
+Looking at our chart we see that time-series data can be quite noisy, with a lot of up and down spikes. This can sometimes make it difficult to see what's going on.
+
+A useful technique to make a trend apparent is to smooth out the observations by taking an average. By averaging say, 6 or 12 observations we can construct something called the rolling mean. Essentially we calculate the average in a window of time and move it forward by one observation at a time.
+
+Since this is such a common technique, Pandas actually two handy methods already built-in: `[rolling()](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.rolling.html)` (to create the rolling window of the given size for the next operation)
+and `[mean()](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.core.window.rolling.Rolling.mean.html)`. 
+We can chain these two methods up to create a `DataFrame` made up of the averaged observations.
+
+
+
+```python
+# The window is number of observations that are averaged
+roll_df = reshaped_df.rolling(window=6).mean()
+```
+
+### Print all columns of a DataFrame in the same figure
+
+```python
+
+mean_df = df_pivot.rolling(window=6).mean()
+
+plt.figure(figsize=(16,10))
+
+# Plots
+for column in mean_df.columns:
+  plt.plot(mean_df.index, mean_df[column].values, label=mean_df[column].name, linewidth=3) 
+
+# Labels
+plt.xlabel("Date")
+plt.ylabel("Number of questions")
+plt.title("Programming languages Questions on StackOverflow Over Time")
+
+
+# Legend
+plt.legend(fontsize=13)
+
+# Improve date display
+plt.xticks(rotation=45)
+
+# Show
+plt.tight_layout()
+plt.show()
+```
