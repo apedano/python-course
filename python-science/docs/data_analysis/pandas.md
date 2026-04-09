@@ -248,7 +248,116 @@ Date
 2008-11-01      16.0  257.0  1728.0  733.0   139.0  0.0   951.0       581.0   
 ```
 
-### `Series`
+### Grouping and Aggregating Data
+
+We can group columns
+
+```python
+df.groupby('ColName').count()
+```
+Every row column will have the same value with the count
+
+This gives the mean mid career salary per group
+
+```python
+clean_df.groupby('Group')['Mid-Career Median Salary'].mean()
+```
+
+It sums the values for each column on the grouped data frame 
+```python
+cdf.groupby('TagName').sum()
+```
+
+Then we can also add filtering or slicing on the grouped dataframe as usual
+
+
+```python
+df_sets.groupby("year").count().query("year == 1955 | year == 2019")
+
+# df  ->  DataFrameGroupBy -> df 
+
+#sliced out the last two years
+df_sets_per_full_year = df_sets.groupby("year").count()[:-2:]
+```
+
+### The `.agg()` function
+
+The `.agg()` (short for aggregate) function in pandas is used to apply one or more aggregation operations (like `sum`, `mean`, `min`, `max`, etc.) across a `DataFrame` or `Series`.
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({
+    'A': [1, 2, 3],
+    'B': [4, 5, 6]
+})
+
+df.agg('sum') 
+```
+
+```
+A     6
+B    15
+```
+
+Multiple aggragations
+```python
+df.agg(['sum', 'mean'])
+```
+
+```
+        A     B
+sum   6.0  15.0
+mean  2.0   5.0
+```
+
+Custom functions
+
+```python
+df.agg(lambda x: x.max() - x.min())
+```
+
+### Combined with `groupby`
+
+```python
+df = pd.DataFrame({
+    'Category': ['A', 'A', 'B'],
+    'Value': [10, 20, 30]
+})
+
+df.groupby('Category').agg('sum')
+
+```
+
+```
+Category
+A    30
+B    30
+```
+
+Multiple functions
+
+```python
+df.groupby('Category').agg({
+    'Value': ['sum', 'mean']
+})
+```
+
+Number of unique values per specific column
+
+The function takes a `dict` as input with the column name and the aggregating function 
+```python
+# the number of different (unique) themes per year 
+df_sets.groupby("year").agg({"theme_id": pd.Series.nunique})
+```
+
+### Merge dataframes
+
+```python
+
+```
+
+## `Series`
 
 A `DataFrame` composes [Series](https://pandas.pydata.org/docs/reference/series.html)
 
@@ -284,7 +393,9 @@ Output
 6     Sunny
 ``
 
-#### Series functions
+###
+
+### Series functions
 
 ```python
 import pandas as pd
@@ -336,14 +447,14 @@ print(temp_series.max())  # 24
 | s.cumsum()               | Cumulative sum                    | s.cumsum()             |
 | s.rolling(window).mean() | Rolling average                   | s.rolling(3).mean()    |
 
-#### Series manipulation functions
+### Series manipulation functions
 
 | Method / Attribute                          | Description         | Example                                    |
 |---------------------------------------------|---------------------|--------------------------------------------|
 | df['col1'].subtract(df['col2'])             | Subtract (or `-`)   | diff_col = df['col1'].subtract(df['col2']) |
 | clean_df.insert(<#_col>, <label>, <series>) | Insert series in DF | df.insert(1, 'Spread', diff_col)           |
 
-#### Series String Methods (`s.str`)
+### Series String Methods (`s.str`)
 
 | Method                   | Description                    | Example                     |
 |--------------------------|--------------------------------|-----------------------------|
@@ -370,7 +481,7 @@ print(temp_series.max())  # 24
 | s.str.isnumeric()        | Check if numeric string        | s.str.isnumeric()           |
 | s.str.isalpha()          | Check if alphabetic            | s.str.isalpha()             |
 
-#### Series 📅 Datetime Methods (`s.dt`)
+### Series 📅 Datetime Methods (`s.dt`)
 
 | Method               | Description                 | Example                             |
 |----------------------|-----------------------------|-------------------------------------|
@@ -412,7 +523,52 @@ Name: condition, dtype: str
 0  Monday    12     Sunny
 ``
 
-#### Conversion to dict
+## Create dataframe from series
+
+We can use a dict
+
+```python
+#counts the rows with the same theme_id and slices until the last 5 rows
+theme_count_series = df_sets["theme_id"].value_counts()[::5]
+type(theme_count_series) #series
+
+df_theme_count = pd.DataFrame({"id": theme_count_series.index, "set_count": theme_count_series.values})
+print(df_theme_count.head())
+```
+
+```
+        id  set_count
+0       158        753
+1       505        328
+2       443        197
+3       453        142
+4        52        115
+```
+
+### Merge two dataframes
+
+To `.merge()` two DataFrame along a particular column, we need to provide our two DataFrames and then the column name on which to merge. 
+This is why we set `on='id'`. Both our `set_theme_count` and our `themes` DataFrames have a column with this name.
+
+```python
+df_themes = pd.read_csv("data/themes.csv")
+#from previous chapter 
+theme_count_series
+
+merged_df = pd.merge(df_theme_count, df_themes, on='id')
+print(merged_df.head())
+```
+
+```
+    id  set_count           name  parent_id
+0  158        753      Star Wars        NaN
+1  505        328      Basic Set      504.0
+2  443        197  Service Packs        NaN
+3  453        142        Technic      443.0
+4   52        115           City       50.0
+```
+
+### Conversion to dict
 
 ```python
 import pandas as pd
@@ -513,24 +669,6 @@ scores
 Name: 2, dtype: object
 ```
 
-## Grouping and Pivoting Data
 
-We can group columns
-
-```python
-df.groupby('ColName').count()
-```
-Every row column will have the same value with the count
-
-This gives the mean mid career salary per group
-
-```python
-clean_df.groupby('Group')['Mid-Career Median Salary'].mean()
-```
-
-It sums the values for each column on the grouped data frame 
-```python
-cdf.groupby('TagName').sum()
-```
 
 

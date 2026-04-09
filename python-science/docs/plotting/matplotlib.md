@@ -2,8 +2,6 @@
 
 Matplotlib is an incredibly popular one and it works beautifully in combination with Pandas, so let's check it out. 
 
-## Plot a Pandas DataFrame with `pyplot`
-
 https://matplotlib.org/3.2.1/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot
 
 ```python
@@ -80,7 +78,7 @@ plt.show()
 ![plot_2d_java.png](plot_2d_java.png)
 
 
-### Methods
+## Methods
 
 * `.figure()` - allows us to resize our chart
 * `.xticks()` - configures our x-axis
@@ -89,7 +87,7 @@ plt.show()
 * `.ylabel()` - add text to the y-axis
 * `.ylim()` - allows us to set a lower and upper bound
 
-### Smooth the curves with rolling mean
+## Smooth the curves with rolling mean
 
 Looking at our chart we see that time-series data can be quite noisy, with a lot of up and down spikes. This can sometimes make it difficult to see what's going on.
 
@@ -106,7 +104,7 @@ We can chain these two methods up to create a `DataFrame` made up of the average
 roll_df = reshaped_df.rolling(window=6).mean()
 ```
 
-### Print all columns of a DataFrame in the same figure
+## Print all columns of a DataFrame in the same figure
 
 ```python
 
@@ -134,3 +132,83 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 ```
+
+![all_languages_rollin_mean.png](all_languages_rollin_mean.png)
+
+## Compose multi axes plots
+
+If we want to plot two series where the x-axis have two different scales in one figure 
+we have to normalize the view
+
+If we reuse the same axis we would have 
+![plot_different_axes.png](plot_different_axes.png)
+
+The problem is that the "number of themes" and the "number of sets" have very different scales. 
+The theme number ranges between 0 and 90, while the number of sets ranges between 0 and 900.
+
+```python
+df_themes_per_year = df_sets.groupby("year").agg({"theme_id": pd.Series.nunique})[:-2:]
+df_sets_per_year = df_sets.groupby("year").agg({"set_num": pd.Series.nunique})[:-2:]
+print(df_themes_per_year.head())
+
+
+import matplotlib.pyplot as plt
+plt.figure()
+
+#Extract the axes
+ax1 = plt.gca() # get current axes
+ax2 = ax1.twinx() # create another axis sharing the same x1 axes
+
+# Plots
+ax1.plot(df_themes_per_year.index, df_themes_per_year.theme_id.values, color="green")
+
+ax2.plot(df_sets_per_year.index, df_sets_per_year.set_num.values, color="blue")
+
+# Labels
+ax1.set_xlabel("Year")
+ax1.set_ylabel("Themes per year", color="green")
+ax2.set_ylabel("Sets per year", color="blue")
+plt.title("Lego themes over year")
+
+
+# Improve date display
+plt.xticks(rotation=45)
+
+# Show
+plt.tight_layout()
+plt.show()
+
+
+```
+
+![two_axes_plot.png](two_axes_plot.png)
+
+
+## Draw bar chart
+
+```python
+print(merged_df.head())
+```
+
+```
+    id  set_count           name  parent_id
+0  158        753      Star Wars        NaN
+1  505        328      Basic Set      504.0
+2  443        197  Service Packs        NaN
+3  453        142        Technic      443.0
+4   52        115           City       50.0
+```
+
+```python
+import matplotlib.pyplot as plt
+plt.figure()
+plt.figure(figsize=(14,8))
+#rotates the x names 
+plt.xticks(fontsize=14, rotation=45)
+plt.yticks(fontsize=14)
+plt.ylabel('Nr of Sets', fontsize=14)
+plt.xlabel('Theme Name', fontsize=14)
+plt.bar(merged_df.name[:10], merged_df.set_count[:10]) 
+```
+
+![bar_chart.png](bar_chart.png)
