@@ -7,31 +7,51 @@
 ```bash
 python3 -m pip install pandas
 ```
+
 ## Formating data
 
 ### Define formatting for pandas
+
 Float formatting
 
 ```python
-#Example for money
+# Example for money
 pd.options.display.float_format = '{:,.2f}'.format 
 ```
 
+| Code | Meaning          | Example |
+| ---- | ---------------- | ------- |
+| `%Y` | 4-digit year     | 2024    |
+| `%y` | 2-digit year     | 24      |
+| `%m` | Month (01–12)    | 03      |
+| `%d` | Day (01–31)      | 15      |
+| `%H` | Hour (00–23)     | 14      |
+| `%I` | Hour (01–12)     | 02      |
+| `%M` | Minute           | 30      |
+| `%S` | Second           | 45      |
+| `%f` | Microseconds     | 123456  |
+| `%b` | Short month name | Jan     |
+| `%B` | Full month name  | January |
+| `%a` | Short weekday    | Mon     |
+| `%A` | Full weekday     | Monday  |
+| `%p` | AM/PM            | PM      |
+
+
 ### Define formatting for single DataFrame
 
-
 1. Converting String to DateTime (Parsing)
+
 ```python
-#Pandas usually detects standard ISO 8601 format (YYYY-MM-DD) 
+# Pandas usually detects standard ISO 8601 format (YYYY-MM-DD) 
 df['date'] = pd.to_datetime(df['date'])
 
-type(df.date[1]) #pandas._libs.tslibs.timestamps.Timestamp
+type(df.date[1])  # pandas._libs.tslibs.timestamps.Timestamp
 
-#Or custom format
+# Or custom format
 df['date'] = pd.to_datetime(df['date'], format='%d/%m/%Y')
 ```
-2. Change displaying
 
+2. Change displaying
 
 ## Read CSV
 
@@ -148,7 +168,7 @@ print(type(data))  # <class 'pandas.DataFrame'>
 | df.at[]               | Access single value by label           | df.at[0, "age"]                                |
 | df.iat[]              | Access single value by position        | df.iat[0, 1]                                   |
 | df.query()            | Filter rows using expression           | df.query("age > 30")                           |
-| df[df["col"] > value] | Boolean filtering                      | df[df["age"] > 30]                             |
+| df[df["col"] > value] | Boolean filtering                      | df_btc_price[df_btc_price.isna().any(axis=1)]  |
 | df.value_counts()     | Count unique values in a column        | df["city"].value_counts()                      |
 | df.unique()           | Get unique values                      | df["city"].unique()                            |
 | df.nunique()          | Count unique values                    | df["city"].nunique()                           |
@@ -176,7 +196,9 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 ```
+
 Output
+
 ```
          date       city  sales
 0  2024-01-01  Amsterdam    100
@@ -191,6 +213,7 @@ Output
 pivot_df = df.pivot(index="date", columns="city", values="sales")
 print(pivot_df)
 ```
+
 ```
 city        Amsterdam  Rotterdam
 date                           
@@ -214,13 +237,15 @@ pivot_table_df = df.pivot_table(
 )
 ```
 
-#### Handling `NaN` 
+#### Handling `NaN`
+
 For missing values, the pivot table will have `NaN`, we can replace it with
 
 ```python
 df_pivot = df.pivot(index="Date", columns="TagName", values="NumTags")
 print(df_pivot.head())
 ```
+
 ```
 agName     assembly      c      c#    c++  delphi  go    java  javascript  \
 Date                                                                         
@@ -231,7 +256,6 @@ Date
 2008-11-01      16.0  257.0  1728.0  733.0   139.0 NaN   951.0       581.0   
 
 ```
-
 
 ```python
 df_pivot.fillna(0, inplace=True)
@@ -255,6 +279,7 @@ We can group columns
 ```python
 df.groupby('ColName').count()
 ```
+
 Every row column will have the same value with the count
 
 This gives the mean mid career salary per group
@@ -263,26 +288,27 @@ This gives the mean mid career salary per group
 clean_df.groupby('Group')['Mid-Career Median Salary'].mean()
 ```
 
-It sums the values for each column on the grouped data frame 
+It sums the values for each column on the grouped data frame
+
 ```python
 cdf.groupby('TagName').sum()
 ```
 
 Then we can also add filtering or slicing on the grouped dataframe as usual
 
-
 ```python
 df_sets.groupby("year").count().query("year == 1955 | year == 2019")
 
 # df  ->  DataFrameGroupBy -> df 
 
-#sliced out the last two years
+# sliced out the last two years
 df_sets_per_full_year = df_sets.groupby("year").count()[:-2:]
 ```
 
 ### The `.agg()` function
 
-The `.agg()` (short for aggregate) function in pandas is used to apply one or more aggregation operations (like `sum`, `mean`, `min`, `max`, etc.) across a `DataFrame` or `Series`.
+The `.agg()` (short for aggregate) function in pandas is used to apply one or more aggregation operations (like `sum`,
+`mean`, `min`, `max`, etc.) across a `DataFrame` or `Series`.
 
 ```python
 import pandas as pd
@@ -301,6 +327,7 @@ B    15
 ```
 
 Multiple aggragations
+
 ```python
 df.agg(['sum', 'mean'])
 ```
@@ -345,17 +372,103 @@ df.groupby('Category').agg({
 
 Number of unique values per specific column
 
-The function takes a `dict` as input with the column name and the aggregating function 
+The function takes a `dict` as input with the column name and the aggregating function
+
 ```python
 # the number of different (unique) themes per year 
 df_sets.groupby("year").agg({"theme_id": pd.Series.nunique})
 ```
 
 ### Merge dataframes
-
+Given the  df
 ```python
+df_themes = pd.read_csv("data/themes.csv")
+theme_count_series = df_sets["theme_id"].value_counts()[::5]
+df_theme_count = pd.DataFrame({"id": theme_count_series.index, "set_count": theme_count_series.values})
+print(df_theme_count.head())
+```
 
 ```
+    id  set_count
+0  158        753
+1  505        328
+2  443        197
+3  453        142
+4   52        115
+```
+
+and 
+
+```python
+    id            name  parent_id
+0   1         Technic        NaN
+1   2  Arctic Technic        1.0
+2   3     Competition        1.0
+3   4  Expert Builder        1.0
+4   5           Model        1.0
+```
+
+> It is important that they share the same merge column name (`id`)
+
+```
+merged_df = pd.merge(df_theme_count, df_themes, on='id')
+print(merged_df.head())
+```
+
+```text
+    id  set_count           name  parent_id
+0  158        753      Star Wars        NaN
+1  505        328      Basic Set      504.0
+2  443        197  Service Packs        NaN
+3  453        142        Technic      443.0
+4   52        115           City       50.0
+```
+
+### Resampling
+
+Convenience method for frequency conversion and resampling of time series. The object must have a datetime-like index (DatetimeIndex, PeriodIndex, or TimedeltaIndex), or the caller must pass the label of a datetime-like series/index to the on/level keyword parameter.
+
+```text
+print(df_btc_price.head())
+```
+
+```text
+  DATE       CLOSE      VOLUME
+0 2014-09-17  457.334015  21056800.0
+1 2014-09-18  424.440002  34483200.0
+2 2014-09-19  394.795990  37919700.0
+3 2014-09-20  408.903992  36863600.0
+4 2014-09-21  398.821014  26580100.0
+```
+Apply the resampling
+
+```python
+df_btc_price_montly = df_btc_price.resample('ME', on='DATE').last()
+df_btc_price_montly.head()
+```
+#### Aggregating function
+
+`last()` takes the last row in the df, so, if not sorted can be misleading.
+
+Better sort by date before with `df_btc_price = df_btc_price.sort_values('DATE')`
+
+Other aggregating functions are:
+
+```python
+.resample('M', on='DATE').mean()   # average price per month
+.resample('M', on='DATE').max()    # max price per month
+.resample('M', on='DATE').ohlc()   # OHLC (great for trading data)
+```
+
+Resample based on the last row of the `M` (month)
+
+| Frequency | Meaning                            |
+|-----------| ---------------------------------- |
+| `'ME'`    | Month **end** (e.g., 2024-01-31)   |
+| `'MS'`    | Month **start** (e.g., 2024-01-01) |
+
+
+
 
 ## `Series`
 
@@ -528,9 +641,9 @@ Name: condition, dtype: str
 We can use a dict
 
 ```python
-#counts the rows with the same theme_id and slices until the last 5 rows
+# counts the rows with the same theme_id and slices until the last 5 rows
 theme_count_series = df_sets["theme_id"].value_counts()[::5]
-type(theme_count_series) #series
+type(theme_count_series)  # series
 
 df_theme_count = pd.DataFrame({"id": theme_count_series.index, "set_count": theme_count_series.values})
 print(df_theme_count.head())
@@ -547,7 +660,8 @@ print(df_theme_count.head())
 
 ### Merge two dataframes
 
-To `.merge()` two DataFrame along a particular column, we need to provide our two DataFrames and then the column name on which to merge. 
+To `.merge()` two DataFrame along a particular column, we need to provide our two DataFrames and then the column name on
+which to merge.
 This is why we set `on='id'`. Both our `set_theme_count` and our `themes` DataFrames have a column with this name.
 
 ```python
