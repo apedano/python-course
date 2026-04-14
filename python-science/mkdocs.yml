@@ -49,3 +49,4 @@ nav:
       - data_analysis/pandas.md
   - Plotting:
       - plotting/matplotlib.md
+      - plotting/plotly.md

@@ -20,7 +20,7 @@ pd.options.display.float_format = '{:,.2f}'.format
 ```
 
 | Code | Meaning          | Example |
-| ---- | ---------------- | ------- |
+|------|------------------|---------|
 | `%Y` | 4-digit year     | 2024    |
 | `%y` | 2-digit year     | 24      |
 | `%m` | Month (01–12)    | 03      |
@@ -35,7 +35,6 @@ pd.options.display.float_format = '{:,.2f}'.format
 | `%a` | Short weekday    | Mon     |
 | `%A` | Full weekday     | Monday  |
 | `%p` | AM/PM            | PM      |
-
 
 ### Define formatting for single DataFrame
 
@@ -150,35 +149,36 @@ print(type(data))  # <class 'pandas.DataFrame'>
 
 #### DataFrame functions
 
-| Method / Attribute    | Description                            | Example                                        |
-|-----------------------|----------------------------------------|------------------------------------------------|
-| pd.read_csv()         | Load CSV file into a DataFrame         | df = pd.read_csv("file.csv")                   |
-| df.head(n)            | First n rows (default 5)               | df.head()                                      |
-| df.tail(n)            | Last n rows                            | df.tail(10)                                    |
-| df.shape              | Number of rows and columns             | df.shape                                       |
-| df.count()            | Number entries per column              | df.count()                                     |
-| df.columns            | Column names                           | df.columns                                     |
-| df.dtypes             | Data types of columns                  | df.dtypes                                      |
-| df.info()             | Summary of DataFrame (types, nulls)    | df.info()                                      |
-| df.describe()         | Statistical summary of numeric columns | df.describe()                                  |
-| df["col"]             | Select a single column                 | df["age"]                                      |
-| df[["col1","col2"]]   | Select multiple columns                | df[["age","name"]]                             |
-| df.loc[]              | Label-based row/column selection       | df.loc[0:5, ["age"]]                           |
-| df.iloc[]             | Position-based row/column selection    | df.iloc[0:5, 0:2]                              |
-| df.at[]               | Access single value by label           | df.at[0, "age"]                                |
-| df.iat[]              | Access single value by position        | df.iat[0, 1]                                   |
-| df.query()            | Filter rows using expression           | df.query("age > 30")                           |
-| df[df["col"] > value] | Boolean filtering                      | df_btc_price[df_btc_price.isna().any(axis=1)]  |
-| df.value_counts()     | Count unique values in a column        | df["city"].value_counts()                      |
-| df.unique()           | Get unique values                      | df["city"].unique()                            |
-| df.nunique()          | Count unique values                    | df["city"].nunique()                           |
-| df.isnull()           | Detect missing values                  | df.isnull()                                    |
-| df.isna()             | Detect non numeric values              | df.isna()                                      |
-| df.dropna()           | New df with dropped non numeric values | clean_df = df.isna()                           |
-| df.notnull()          | Detect non-missing values              | df.notnull()                                   |
-| df.sample(n)          | Random sample of rows                  | df.sample(5)                                   |
-| df.sort_values()      | Sort by column                         | clean_df.sort_values('Spread', ascending=True) |
-| df.groupby()          | Group data for aggregation             | df.groupby("city").mean()                      |
+| Method / Attribute    | Description                            | Example                                                                                |
+|-----------------------|----------------------------------------|----------------------------------------------------------------------------------------|
+| pd.read_csv()         | Load CSV file into a DataFrame         | df = pd.read_csv("file.csv")                                                           |
+| df.head(n)            | First n rows (default 5)               | df.head()                                                                              |
+| df.tail(n)            | Last n rows                            | df.tail(10)                                                                            |
+| df.shape              | Number of rows and columns             | df.shape                                                                               |
+| df.count()            | Number entries per column              | df.count()                                                                             |
+| df.columns            | Column names                           | df.columns                                                                             |
+| df.dtypes             | Data types of columns                  | df.dtypes                                                                              |
+| df.info()             | Summary of DataFrame (types, nulls)    | df.info()                                                                              |
+| df.describe()         | Statistical summary of numeric columns | df.describe()                                                                          |
+| df["col"]             | Select a single column                 | df["age"]                                                                              |
+| df[["col1","col2"]]   | Select multiple columns                | df[["age","name"]]                                                                     |
+| df.loc[]              | Label-based row/column selection       | df.loc[0:5, ["age"]]                                                                   |
+| df.iloc[]             | Position-based row/column selection    | df.iloc[0:5, 0:2]                                                                      |
+| df.at[]               | Access single value by label           | df.at[0, "age"]                                                                        |
+| df.iat[]              | Access single value by position        | df.iat[0, 1]                                                                           |
+| df.query()            | Filter rows using expression           | df.query("age > 30")                                                                   |
+| df[df["col"] > value] | Boolean filtering                      | df_btc_price[df_btc_price.isna().any(axis=1)]                                          |
+| df.value_counts()     | Count unique values in a column        | df["city"].value_counts()                                                              |
+| df.unique()           | Get unique values                      | df["city"].unique()                                                                    |
+| df.nunique()          | Count unique values                    | df["city"].nunique()                                                                   |
+| df.isnull()           | Detect missing values                  | df.isnull()                                                                            |
+| df.isna()             | Detect non numeric values              | df.isna()                                                                              |
+| df.dropna()           | New df with dropped non numeric values | clean_df = df.isna()                                                                   |
+| df.notnull()          | Detect non-missing values              | df.notnull()                                                                           |
+| df.sample(n)          | Random sample of rows                  | df.sample(5)                                                                           |
+| df.sort_values()      | Sort by column                         | df_apps_clean.sort_values(by=['col1', 'col2'], ascending=[True, False], inplace=False) |
+| df.groupby()          | Group data for aggregation             | df.groupby("city").mean()                                                              |
+| df.drop               | Delete (drop) column                   | df.drop(columns=["col4"], inplace=True)                                                |
 
 ### Pivoting DataFrame
 
@@ -380,7 +380,9 @@ df_sets.groupby("year").agg({"theme_id": pd.Series.nunique})
 ```
 
 ### Merge dataframes
-Given the  df
+
+Given the df
+
 ```python
 df_themes = pd.read_csv("data/themes.csv")
 theme_count_series = df_sets["theme_id"].value_counts()[::5]
@@ -397,15 +399,34 @@ print(df_theme_count.head())
 4   52        115
 ```
 
-and 
+and
 
 ```python
-    id            name  parent_id
-0   1         Technic        NaN
-1   2  Arctic Technic        1.0
-2   3     Competition        1.0
-3   4  Expert Builder        1.0
-4   5           Model        1.0
+    id
+name
+parent_id
+0
+1
+Technic
+NaN
+1
+2
+Arctic
+Technic
+1.0
+2
+3
+Competition
+1.0
+3
+4
+Expert
+Builder
+1.0
+4
+5
+Model
+1.0
 ```
 
 > It is important that they share the same merge column name (`id`)
@@ -424,9 +445,46 @@ print(merged_df.head())
 4   52        115           City       50.0
 ```
 
+### Split and stack groups
+
+Suppose we have a group by a field where a single row can have multiple field values.
+For instance, we have a app dataframe where an app in a row can have more Genres (; separated)
+If we run a group by genres the generet index value will contain multiple genres
+
+We need to split the genres and then stack the group by
+
+```python
+df_apps_clean['Genres'].value_counts()
+```
+It contains `;` separated values
+```text
+Genres
+Tools                                  732
+Entertainment                          498
+                                      ... 
+Health & Fitness;Action & Adventure      1
+Casual;Music & Video                     1
+Lifestyle;Pretend Play                   1
+Name: count, Length: 115, dtype: int64
+```
+we have 115 different values.
+
+We can `split` and then `stack` the values
+
+```python
+# Split the strings on the semi-colon and then .stack them.
+stacked_series = df_apps_clean.Genres.str.split(';', expand=True).stack()
+print(f'We now have a single column with shape: {stack.shape}')
+num_genres = stacked_series.value_counts()
+print(f'Number of genres: {len(num_genres)}')
+```
+
+
 ### Resampling
 
-Convenience method for frequency conversion and resampling of time series. The object must have a datetime-like index (DatetimeIndex, PeriodIndex, or TimedeltaIndex), or the caller must pass the label of a datetime-like series/index to the on/level keyword parameter.
+Convenience method for frequency conversion and resampling of time series. The object must have a datetime-like index (
+DatetimeIndex, PeriodIndex, or TimedeltaIndex), or the caller must pass the label of a datetime-like series/index to the
+on/level keyword parameter.
 
 ```text
 print(df_btc_price.head())
@@ -446,6 +504,7 @@ Apply the resampling
 df_btc_price_montly = df_btc_price.resample('ME', on='DATE').last()
 df_btc_price_montly.head()
 ```
+
 #### Aggregating function
 
 `last()` takes the last row in the df, so, if not sorted can be misleading.
@@ -455,20 +514,17 @@ Better sort by date before with `df_btc_price = df_btc_price.sort_values('DATE')
 Other aggregating functions are:
 
 ```python
-.resample('M', on='DATE').mean()   # average price per month
-.resample('M', on='DATE').max()    # max price per month
-.resample('M', on='DATE').ohlc()   # OHLC (great for trading data)
+.resample('M', on='DATE').mean()  # average price per month
+.resample('M', on='DATE').max()  # max price per month
+.resample('M', on='DATE').ohlc()  # OHLC (great for trading data)
 ```
 
 Resample based on the last row of the `M` (month)
 
 | Frequency | Meaning                            |
-|-----------| ---------------------------------- |
+|-----------|------------------------------------|
 | `'ME'`    | Month **end** (e.g., 2024-01-31)   |
 | `'MS'`    | Month **start** (e.g., 2024-01-01) |
-
-
-
 
 ## `Series`
 
@@ -569,6 +625,10 @@ print(temp_series.max())  # 24
 
 ### Series String Methods (`s.str`)
 
+```python
+df_apps_top_review_50[df_apps_top_review_50['Type'].str.strip().str.contains('Free', case=False, na=False)]
+```
+
 | Method                   | Description                    | Example                     |
 |--------------------------|--------------------------------|-----------------------------|
 | s.str.lower()            | Convert to lowercase           | s.str.lower()               |
@@ -666,7 +726,7 @@ This is why we set `on='id'`. Both our `set_theme_count` and our `themes` DataFr
 
 ```python
 df_themes = pd.read_csv("data/themes.csv")
-#from previous chapter 
+# from previous chapter 
 theme_count_series
 
 merged_df = pd.merge(df_theme_count, df_themes, on='id')
