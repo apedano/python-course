@@ -50,3 +50,5 @@ nav:
   - Plotting:
       - plotting/matplotlib.md
       - plotting/plotly.md
+  - Computing:
+      computation/numpy.md

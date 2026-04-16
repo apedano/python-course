@@ -183,6 +183,30 @@ plt.show()
 
 ![two_axes_plot.png](two_axes_plot.png)
 
+## Draw a numpy array
+
+```python
+import numpy as np
+import matplotlib as plt
+data = np.linspace(start=-3, stop=3, num=9)
+print(data) #[-3.   -2.25 -1.5  -0.75  0.    0.75  1.5   2.25  3.  ]
+
+plt.figure()
+
+# Plots
+plt.plot(data, color='c', linestyle='--', label='JAVA-lbl')
+
+# Labels
+plt.xlabel("Index")
+plt.ylabel("Value")
+plt.title("Draw a NumPy 1 dim array")
+
+
+# Show
+plt.show()
+
+
+```
 
 ## Draw bar chart
 
@@ -212,3 +236,32 @@ plt.bar(merged_df.name[:10], merged_df.set_count[:10])
 ```
 
 ![bar_chart.png](bar_chart.png)
+
+## Show a 3-dim numpy ndarray as image with `imshow()`
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+random_img = np.random.randint(0, 256, size=(128, 128, 3), dtype=np.uint8)
+
+# Display image
+plt.imshow(random_img)
+plt.axis('off')  # hide axes
+plt.title("Random RGB Image")
+plt.show()
+```
+
+```python
+from skimage import data
+import numpy as np
+import matplotlib.pyplot as plt
+
+img = data.astronaut()# RGB image
+
+print(type(img)) #<class 'numpy.ndarray'>
+print(img.shape) #(512, 512, 3)
+plt.imshow(img)
+plt.axis('off')
+plt.show()
+```
