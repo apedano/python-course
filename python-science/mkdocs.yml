@@ -47,6 +47,7 @@ plugins:
 nav:
   - Data Analysis:
       - data_analysis/pandas.md
+      - theory/linear_regression.md
   - Plotting:
       - plotting/matplotlib.md
       - plotting/plotly.md
