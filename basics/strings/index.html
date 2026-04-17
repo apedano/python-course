@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
@@ -452,6 +452,73 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formatting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-format-specifiers-work-with-f-strings-and-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common format specifiers (work with f-strings and .format())
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-separators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change separators
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Change separators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#format-with-locale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format with locale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-formatter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Define formatter
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2858,6 +2925,73 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formatting
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formatting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-format-specifiers-work-with-f-strings-and-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common format specifiers (work with f-strings and .format())
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-separators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change separators
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Change separators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#format-with-locale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format with locale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-formatter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Define formatter
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2886,6 +3020,86 @@
 <h3 id="length-lenx">Length <code>len(x)</code><a class="headerlink" href="#length-lenx" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">a</span><span class="o">=</span><span class="s2">&quot;This is a string&quot;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</code></pre></div>
+<h2 id="formatting">Formatting<a class="headerlink" href="#formatting" title="Permanent link">&para;</a></h2>
+<p>Floats 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Pi rounded: </span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>   <span class="c1"># 3.14</span>
+</code></pre></div>
+Or (older)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My name is </span><span class="si">{}</span><span class="s2"> and I am </span><span class="si">{}</span><span class="s2"> years old&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">))</span>
+</code></pre></div>
+With named placeholders
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My name is </span><span class="si">{n}</span><span class="s2"> and I am </span><span class="si">{a}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="n">age</span><span class="p">))</span>
+</code></pre></div></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pi rounded: </span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pi</span><span class="p">))</span>
+</code></pre></div>
+<p>Float formatting</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">pi</span> <span class="o">=</span> <span class="mf">3.1415926535</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pi rounded: </span><span class="si">%.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">pi</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="common-format-specifiers-work-with-f-strings-and-format">Common format specifiers (work with f-strings and <code>.format()</code>)<a class="headerlink" href="#common-format-specifiers-work-with-f-strings-and-format" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Specifier</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.2f</code></td>
+<td>2 decimal places</td>
+</tr>
+<tr>
+<td><code>&gt;10</code></td>
+<td>right align width 10</td>
+</tr>
+<tr>
+<td><code>&lt;10</code></td>
+<td>left align</td>
+</tr>
+<tr>
+<td><code>^10</code></td>
+<td>center</td>
+</tr>
+<tr>
+<td><code>,</code></td>
+<td>thousand separator</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>percentage</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">value</span> <span class="o">=</span> <span class="mf">12345.678</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">value</span><span class="si">:</span><span class="s2">,.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>   <span class="c1"># 12,345.68</span>
+</code></pre></div>
+<h3 id="change-separators">Change separators<a class="headerlink" href="#change-separators" title="Permanent link">&para;</a></h3>
+<h4 id="format-with-locale">Format with locale<a class="headerlink" href="#format-with-locale" title="Permanent link">&para;</a></h4>
+<p>The default thousands separator is <code>,</code> and <code>.</code> for decimals.
+We can change it with the locale
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">locale</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">locale</span><span class="o">.</span><span class="n">setlocale</span><span class="p">(</span><span class="n">locale</span><span class="o">.</span><span class="n">LC_ALL</span><span class="p">,</span> <span class="s2">&quot;nl_NL.UTF-8&quot;</span><span class="p">)</span>  <span class="c1"># Dutch locale</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">value</span> <span class="o">=</span> <span class="mf">12345.678</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">formatted</span> <span class="o">=</span> <span class="n">locale</span><span class="o">.</span><span class="n">format_string</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%.2f</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">grouping</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">formatted</span><span class="p">)</span>  <span class="c1"># 12.345,68</span>
+</code></pre></div></p>
+<blockquote>
+<p>Notes:
+* Locale must be installed on your system (can fail on Windows or containers)
+* Not thread-safe in some environments
+* Affects global formatting</p>
+</blockquote>
+<h4 id="define-formatter">Define formatter<a class="headerlink" href="#define-formatter" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">format_eu</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="n">s</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">:</span><span class="s2">,.2f</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="s2">&quot;X&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="s2">&quot;,&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">,</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">format_eu</span><span class="p">(</span><span class="mf">12345.678</span><span class="p">))</span>  <span class="c1"># 12.345,68</span>
 </code></pre></div>
 
 
