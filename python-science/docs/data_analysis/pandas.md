@@ -324,6 +324,35 @@ df_sets.groupby("year").count().query("year == 1955 | year == 2019")
 df_sets_per_full_year = df_sets.groupby("year").count()[:-2:]
 ```
 
+### Grouping by multiple columns
+
+Counts the number of Nobel prices won by category and sex
+
+```python
+#as_index false makes the first column not an index of the dataframe
+cat_men_women = df_data.groupby(['category', 'sex'],
+                               as_index=False).agg({'prize': pd.Series.count})
+print(cat_men_women)
+```
+
+```text
+  category     sex  prize
+0    Chemistry  Female      7
+1    Chemistry    Male    179
+2    Economics  Female      2
+3    Economics    Male     84
+4   Literature  Female     16
+5   Literature    Male    101
+6     Medicine  Female     12
+7     Medicine    Male    210
+8        Peace  Female     17
+9        Peace    Male     90
+10     Physics  Female      4
+11     Physics    Male    212
+```
+
+
+
 ### The `.agg()` function
 
 The `.agg()` (short for aggregate) function in pandas is used to apply one or more aggregation operations (like `sum`,
