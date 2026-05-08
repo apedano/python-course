@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../lists/">
+        <link rel="prev" href="../../data_analysis/pandas/">
       
       
-        <link rel="next" href="../dictionaries/">
+        <link rel="next" href="../../plotting/matplotlib/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>🐍 Tuple - Python Cheatsheet</title>
+        <title>Linear regression - Python Cheatsheet</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tuple" class="md-skip">
+        <a href="#linear-regression" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🐍 Tuple
+              Linear regression
             
           </span>
         </div>
@@ -813,8 +813,6 @@
       
   
   
-    
-  
   
   
     
@@ -827,11 +825,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -852,7 +852,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -870,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../collections/" class="md-nav__link">
         
   
   
@@ -898,7 +898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lists/" class="md-nav__link">
+      <a href="../../collections/lists/" class="md-nav__link">
         
   
   
@@ -923,37 +923,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    🐍 Tuple
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../collections/tuples/" class="md-nav__link">
         
   
   
@@ -969,231 +942,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-what-is-a-tuple" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. What is a Tuple?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-creating-tuples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Creating Tuples
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-accessing-tuple-elements" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Accessing Tuple Elements
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Accessing Tuple Elements">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#slicing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Slicing
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-tuple-immutability" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Tuple Immutability
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-tuple-unpacking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Tuple Unpacking
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Tuple Unpacking">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#extended-unpacking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Extended Unpacking
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-tuple-methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Tuple Methods
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-useful-operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. Useful Operations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="7. Useful Operations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#length" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Length
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#membership" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Membership
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#concatenation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Concatenation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#repetition" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Repetition
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-single-element-tuple" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8. Single-Element Tuple
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-when-to-use-tuples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        9. When to Use Tuples
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10-returning-multiple-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10. Returning Multiple Values
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#11-tuple-with-loop" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        11. Tuple with Loop
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1206,7 +954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dictionaries/" class="md-nav__link">
+      <a href="../../collections/dictionaries/" class="md-nav__link">
         
   
   
@@ -2558,8 +2306,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -2570,13 +2320,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_17" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" checked>
         
           
           <label class="md-nav__link" for="__nav_17" id="__nav_17_label" tabindex="">
@@ -2597,7 +2345,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_17">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2640,10 +2388,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../theory/linear_regression/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear regression
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2659,6 +2434,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#score-function-f_score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Score function $f_{score}$
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fit-least-square" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fit - Least square
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#multiple-linear-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple linear regression
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3136,10 +2981,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-what-is-a-tuple" class="md-nav__link">
+  <a href="#score-function-f_score" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. What is a Tuple?
+        Score function $f_{score}$
       
     </span>
   </a>
@@ -3147,10 +2992,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-creating-tuples" class="md-nav__link">
+  <a href="#fit-least-square" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Creating Tuples
+        Fit - Least square
       
     </span>
   </a>
@@ -3158,22 +3003,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-accessing-tuple-elements" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Accessing Tuple Elements
+        Example
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Accessing Tuple Elements">
+    <nav class="md-nav" aria-label="Example">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#slicing" class="md-nav__link">
+  <a href="#multiple-linear-regression" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Slicing
+        Multiple linear regression
       
     </span>
   </a>
@@ -3182,161 +3027,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-tuple-immutability" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Tuple Immutability
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-tuple-unpacking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Tuple Unpacking
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Tuple Unpacking">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#extended-unpacking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Extended Unpacking
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-tuple-methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Tuple Methods
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-useful-operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. Useful Operations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="7. Useful Operations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#length" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Length
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#membership" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Membership
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#concatenation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Concatenation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#repetition" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Repetition
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-single-element-tuple" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8. Single-Element Tuple
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-when-to-use-tuples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        9. When to Use Tuples
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10-returning-multiple-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10. Returning Multiple Values
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#11-tuple-with-loop" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        11. Tuple with Loop
-      
-    </span>
-  </a>
   
 </li>
       
@@ -3357,112 +3047,52 @@
 
 
 
-<h1 id="tuple">🐍 Tuple<a class="headerlink" href="#tuple" title="Permanent link">&para;</a></h1>
-<h2 id="1-what-is-a-tuple">1. What is a Tuple?<a class="headerlink" href="#1-what-is-a-tuple" title="Permanent link">&para;</a></h2>
-<p>A <strong>tuple</strong> is </p>
+<h1 id="linear-regression">Linear regression<a class="headerlink" href="#linear-regression" title="Permanent link">&para;</a></h1>
+<p>The core idea:</p>
+<p>an <strong>input variable</strong> (independent variable, <code>x</code>)
+an <strong>output variable</strong> (dependent variable, <code>y</code>)</p>
+<blockquote>
+<p>Linear regression tries to find the best straight line that predicts <code>y</code> from <code>x</code>.</p>
+</blockquote>
+<h2 id="score-function-f_score">Score function $f_{score}$<a class="headerlink" href="#score-function-f_score" title="Permanent link">&para;</a></h2>
+<p>$y=mx+b$ where</p>
+<p>Where:</p>
 <ul>
-<li><strong>Ordered</strong> → Items have a defined order</li>
-<li><strong>Immutable</strong> → Cannot be changed after creation</li>
-<li><strong>Allows duplicate</strong> values</li>
-<li>Can store <strong>mixed data types</strong></li>
+<li>$m$ = slope (how much y changes when x changes)</li>
+<li>$b$ = intercept (value of $y$ when $x=0$)</li>
 </ul>
-<hr />
-<h2 id="2-creating-tuples">2. Creating Tuples<a class="headerlink" href="#2-creating-tuples" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Empty tuple</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">empty</span> <span class="o">=</span> <span class="p">()</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Tuple with values</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Mixed data types</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">mixed</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">)</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Without parentheses (tuple packing)</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">packed</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span>
-</code></pre></div>
-<hr />
-<h2 id="3-accessing-tuple-elements">3. Accessing Tuple Elements<a class="headerlink" href="#3-accessing-tuple-elements" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>   <span class="c1"># 10</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># 40</span>
-</code></pre></div>
-<h3 id="slicing">Slicing<a class="headerlink" href="#slicing" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># (20, 30)</span>
-</code></pre></div>
-<hr />
-<h2 id="4-tuple-immutability">4. Tuple Immutability<a class="headerlink" href="#4-tuple-immutability" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># ❌ TypeError</span>
-</code></pre></div>
-<p>Tuples cannot be modified after creation.</p>
-<hr />
-<h2 id="5-tuple-unpacking">5. Tuple Unpacking<a class="headerlink" href="#5-tuple-unpacking" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">point</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">point</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># 4</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>  <span class="c1"># 5</span>
-</code></pre></div>
-<h3 id="extended-unpacking">Extended Unpacking<a class="headerlink" href="#extended-unpacking" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">a</span><span class="p">,</span> <span class="o">*</span><span class="n">middle</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">numbers</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>       <span class="c1"># 1</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">middle</span><span class="p">)</span>  <span class="c1"># [2, 3, 4]</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>       <span class="c1"># 5</span>
-</code></pre></div>
-<hr />
-<h2 id="6-tuple-methods">6. Tuple Methods<a class="headerlink" href="#6-tuple-methods" title="Permanent link">&para;</a></h2>
-<p>Tuples have only two built-in methods:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>  <span class="c1"># 2</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># 3</span>
-</code></pre></div>
-<hr />
-<h2 id="7-useful-operations">7. Useful Operations<a class="headerlink" href="#7-useful-operations" title="Permanent link">&para;</a></h2>
-<h3 id="length">Length<a class="headerlink" href="#length" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">len</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>  <span class="c1"># 3</span>
-</code></pre></div>
-<h3 id="membership">Membership<a class="headerlink" href="#membership" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="mi">3</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># True</span>
-</code></pre></div>
-<h3 id="concatenation">Concatenation<a class="headerlink" href="#concatenation" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># (1, 2, 3, 4)</span>
-</code></pre></div>
-<h3 id="repetition">Repetition<a class="headerlink" href="#repetition" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">3</span>  <span class="c1"># (1, 2, 1, 2, 1, 2)</span>
-</code></pre></div>
-<hr />
-<h2 id="8-single-element-tuple">8. Single-Element Tuple<a class="headerlink" href="#8-single-element-tuple" title="Permanent link">&para;</a></h2>
-<p>Important: A single-element tuple requires a comma.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">not_a_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="p">)</span>     <span class="c1"># int</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">real_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="p">,)</span>     <span class="c1"># tuple</span>
-</code></pre></div>
-<hr />
-<h2 id="9-when-to-use-tuples">9. When to Use Tuples<a class="headerlink" href="#9-when-to-use-tuples" title="Permanent link">&para;</a></h2>
-<p>Use tuples when:</p>
+<h2 id="fit-least-square">Fit -  Least square<a class="headerlink" href="#fit-least-square" title="Permanent link">&para;</a></h2>
+<p>The algorithm chooses <code>m</code> and <code>b</code> to minimize the error between:</p>
 <ul>
-<li>Data should not change</li>
-<li>Returning multiple values from a function</li>
-<li>Using as dictionary keys</li>
-<li>Storing fixed records</li>
+<li><strong>actual values</strong> (real data)</li>
+<li><strong>predicted values</strong> (line)</li>
 </ul>
-<hr />
-<h2 id="10-returning-multiple-values">10. Returning Multiple Values<a class="headerlink" href="#10-returning-multiple-values" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_user</span><span class="p">():</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="k">return</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">30</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">name</span><span class="p">,</span> <span class="n">age</span> <span class="o">=</span> <span class="n">get_user</span><span class="p">()</span>
-</code></pre></div>
-<hr />
-<h2 id="11-tuple-with-loop">11. Tuple with Loop<a class="headerlink" href="#11-tuple-with-loop" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-</code></pre></div>
-<hr />
+<p>This is usually done using <strong>least squares</strong>, which minimizes:</p>
+<p>$KaTeX$ https://katex.org/</p>
+<p>$f_{fit}=\sum(y_{actual}−y_{predicted})^2$</p>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<p>Input:</p>
+<p><code>x</code> = hours studied</p>
+<p><code>y</code> = exam score</p>
+<p>Linear regression finds a line like:</p>
+<p>“<em>each extra hour studied increases the score by 5 points</em>”</p>
+<p>So if:</p>
+<p>slope $m=5$
+intercept $b=50$</p>
+<p>Then the score function is:</p>
+<p>$f_{score}=5x+50$</p>
+<p>2 hours → score = 60</p>
+<p>5 hours → score = 75</p>
+<h3 id="multiple-linear-regression">Multiple linear regression<a class="headerlink" href="#multiple-linear-regression" title="Permanent link">&para;</a></h3>
+<p>In case of multuple variables (dimensions):</p>
+<ul>
+<li>hours studied $x_1$</li>
+<li>sleep $x_2$</li>
+<li>attendance $x_3$</li>
+</ul>
+<p>The model becomes:</p>
+<p>$f_{score}=x_1<em>m_1 + x_2</em>m_3 + ... + x_n*m_n + b$</p>
+<p>Still linear—just in more dimensions.</p>
 
 
 
