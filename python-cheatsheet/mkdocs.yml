@@ -100,8 +100,14 @@ nav:
   - Deployment:
       - cloud/run_in_the_cloud.md
       - gitops/deployment.md
-  - Itertools:
-      - itertools/index.md
+  - Data Analysis:
+      - data_analysis/pandas.md
+      - theory/linear_regression.md
+  - Plotting:
+      - plotting/matplotlib.md
+      - plotting/plotly.md
+  - Computing:
+      computation/numpy.md
   - Async:
       - async/index.md
   - Typing:
