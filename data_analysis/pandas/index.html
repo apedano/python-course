@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../../persistence/sqlite/">
+        <link rel="prev" href="../../gitops/deployment/">
       
       
-        <link rel="next" href="../../networking/api/">
+        <link rel="next" href="../../plotting/matplotlib/">
       
       
         
@@ -1721,8 +1721,6 @@
       
   
   
-    
-  
   
   
     
@@ -1735,11 +1733,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
         
           
           <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
@@ -1760,7 +1760,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1849,6 +1849,45 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#formating-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formating data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formating data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#define-formatting-for-pandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Define formatting for pandas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-formatting-for-single-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Define formatting for single DataFrame
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#read-csv" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1880,9 +1919,153 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DataFrame">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataframe-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DataFrame functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
+  <a href="#pivoting-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pivoting DataFrame
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pivoting DataFrame">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#handling-nan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Handling NaN
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grouping-and-aggregating-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grouping and Aggregating Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grouping-by-multiple-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grouping by multiple columns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-agg-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The .agg() function
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combined-with-groupby" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combined with groupby
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-dataframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merge dataframes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-and-stack-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Split and stack groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resampling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resampling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resampling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggregating-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aggregating function
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#series" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1890,28 +2073,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Series">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#series-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Series functions
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1924,6 +2085,67 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Extracting columns as Series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#series-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#series-manipulation-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series manipulation functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#series-string-methods-sstr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series String Methods (s.str)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#series-datetime-methods-sdt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series 📅 Datetime Methods (s.dt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1935,8 +2157,30 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Extracting rows as DataFrame">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-dataframe-from-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create dataframe from series
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create dataframe from series">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#merge-two-dataframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merge two dataframes
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#conversion-to-dict" class="md-nav__link">
@@ -1982,17 +2226,6 @@
     <span class="md-ellipsis">
       
         using iterrows
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-dict-from-a" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create a dict from a
       
     </span>
   </a>
@@ -2520,8 +2753,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -2532,13 +2767,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_17" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_17" checked>
         
           
           <label class="md-nav__link" for="__nav_17" id="__nav_17_label" tabindex="">
@@ -2548,7 +2781,7 @@
   <span class="md-ellipsis">
     
   
-    Itertools
+    Data Analysis
   
 
     
@@ -2559,12 +2792,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_17_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_17">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Itertools
+    Data Analysis
   
 
           </label>
@@ -2574,17 +2807,492 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../itertools/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🐍 Data analysis with Pandas
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    🐍Collections
+    🐍 Data analysis with Pandas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formating-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formating data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formating data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#define-formatting-for-pandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Define formatting for pandas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-formatting-for-single-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Define formatting for single DataFrame
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#read-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read CSV
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataframe-and-series-working-with-rows-and-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DataFrame and Series: working with rows and columns
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DataFrame and Series: working with rows and columns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DataFrame
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DataFrame">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataframe-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DataFrame functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pivoting-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pivoting DataFrame
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pivoting DataFrame">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#handling-nan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Handling NaN
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grouping-and-aggregating-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grouping and Aggregating Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grouping-by-multiple-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grouping by multiple columns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-agg-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The .agg() function
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combined-with-groupby" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combined with groupby
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-dataframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merge dataframes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-and-stack-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Split and stack groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resampling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resampling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resampling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggregating-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aggregating function
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#series" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extracting-columns-as-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extracting columns as Series
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extracting columns as Series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#series-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#series-manipulation-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series manipulation functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#series-string-methods-sstr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series String Methods (s.str)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#series-datetime-methods-sdt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series 📅 Datetime Methods (s.dt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extracting-rows-as-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extracting rows as DataFrame
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-dataframe-from-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create dataframe from series
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create dataframe from series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#merge-two-dataframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merge two dataframes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversion-to-dict" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conversion to dict
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-dataframe-from-dict" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create DataFrame from dict
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create DataFrame from dict">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loopint-through-dataframe-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loopint through DataFrame with
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-iterrows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        using iterrows
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../theory/linear_regression.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    None
   
 
     
@@ -2637,7 +3345,7 @@
   <span class="md-ellipsis">
     
   
-    Async
+    Plotting
   
 
     
@@ -2650,6 +3358,150 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_18_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_18">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plotting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plotting/matplotlib/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🐍 Plot data with Matplotlib
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plotting/plotly/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🐍 Plot data with Plotly
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computation/numpy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_20" >
+        
+          
+          <label class="md-nav__link" for="__nav_20" id="__nav_20_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Async
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_20">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2716,10 +3568,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_19" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_21" >
         
           
-          <label class="md-nav__link" for="__nav_19" id="__nav_19_label" tabindex="">
+          <label class="md-nav__link" for="__nav_21" id="__nav_21_label" tabindex="">
             
   
   
@@ -2737,8 +3589,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_19_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_19">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_21_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_21">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2805,10 +3657,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_20" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_22" >
         
           
-          <label class="md-nav__link" for="__nav_20" id="__nav_20_label" tabindex="">
+          <label class="md-nav__link" for="__nav_22" id="__nav_22_label" tabindex="">
             
   
   
@@ -2826,8 +3678,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_20_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_20">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_22_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_22">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2937,6 +3789,45 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#formating-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formating data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formating data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#define-formatting-for-pandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Define formatting for pandas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-formatting-for-single-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Define formatting for single DataFrame
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#read-csv" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2968,9 +3859,153 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="DataFrame">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dataframe-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DataFrame functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
+  <a href="#pivoting-dataframe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pivoting DataFrame
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pivoting DataFrame">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#handling-nan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Handling NaN
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grouping-and-aggregating-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grouping and Aggregating Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grouping-by-multiple-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grouping by multiple columns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-agg-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The .agg() function
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combined-with-groupby" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combined with groupby
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-dataframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merge dataframes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-and-stack-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Split and stack groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resampling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resampling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resampling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggregating-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aggregating function
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#series" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2978,28 +4013,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Series">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#series-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Series functions
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3012,6 +4025,67 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Extracting columns as Series">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#series-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#series-manipulation-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series manipulation functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#series-string-methods-sstr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series String Methods (s.str)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#series-datetime-methods-sdt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Series 📅 Datetime Methods (s.dt)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3023,8 +4097,30 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Extracting rows as DataFrame">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-dataframe-from-series" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create dataframe from series
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create dataframe from series">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#merge-two-dataframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merge two dataframes
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#conversion-to-dict" class="md-nav__link">
@@ -3076,17 +4172,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#create-a-dict-from-a" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create a dict from a
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -3114,44 +4199,186 @@
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>pandas
 </code></pre></div>
+<h2 id="formating-data">Formating data<a class="headerlink" href="#formating-data" title="Permanent link">&para;</a></h2>
+<h3 id="define-formatting-for-pandas">Define formatting for pandas<a class="headerlink" href="#define-formatting-for-pandas" title="Permanent link">&para;</a></h3>
+<p>Float formatting</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Example for money</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">float_format</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{:,.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span> 
+</code></pre></div>
+<p>Look at the formatting string in the other tutorial</p>
+<p>Or with a series</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">data</span><span class="p">[</span><span class="s1">&#39;USD_Production_Budget&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;USD_Production_Budget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">data</span><span class="p">[</span><span class="s1">&#39;USD_Production_Budget&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;USD_Production_Budget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">data</span><span class="p">[</span><span class="s1">&#39;USD_Production_Budget&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;USD_Production_Budget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Avarage production budget: </span><span class="si">{</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;USD_Production_Budget&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">,.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Avarage production budget: 31,113,737.58
+</code></pre></div>
+<h3 id="define-formatting-for-single-dataframe">Define formatting for single DataFrame<a class="headerlink" href="#define-formatting-for-single-dataframe" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Converting String to DateTime (Parsing)</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Pandas usually detects standard ISO 8601 format (YYYY-MM-DD) </span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">])</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nb">type</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">date</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># pandas._libs.tslibs.timestamps.Timestamp</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># Or custom format</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">/%m/%Y&#39;</span><span class="p">)</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>%Y</code></td>
+<td>4-digit year</td>
+<td>2024</td>
+</tr>
+<tr>
+<td><code>%y</code></td>
+<td>2-digit year</td>
+<td>24</td>
+</tr>
+<tr>
+<td><code>%m</code></td>
+<td>Month (01–12)</td>
+<td>03</td>
+</tr>
+<tr>
+<td><code>%d</code></td>
+<td>Day (01–31)</td>
+<td>15</td>
+</tr>
+<tr>
+<td><code>%H</code></td>
+<td>Hour (00–23)</td>
+<td>14</td>
+</tr>
+<tr>
+<td><code>%I</code></td>
+<td>Hour (01–12)</td>
+<td>02</td>
+</tr>
+<tr>
+<td><code>%M</code></td>
+<td>Minute</td>
+<td>30</td>
+</tr>
+<tr>
+<td><code>%S</code></td>
+<td>Second</td>
+<td>45</td>
+</tr>
+<tr>
+<td><code>%f</code></td>
+<td>Microseconds</td>
+<td>123456</td>
+</tr>
+<tr>
+<td><code>%b</code></td>
+<td>Short month name</td>
+<td>Jan</td>
+</tr>
+<tr>
+<td><code>%B</code></td>
+<td>Full month name</td>
+<td>January</td>
+</tr>
+<tr>
+<td><code>%a</code></td>
+<td>Short weekday</td>
+<td>Mon</td>
+</tr>
+<tr>
+<td><code>%A</code></td>
+<td>Full weekday</td>
+<td>Monday</td>
+</tr>
+<tr>
+<td><code>%p</code></td>
+<td>AM/PM</td>
+<td>PM</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Change displaying</li>
+</ol>
 <h2 id="read-csv">Read CSV<a class="headerlink" href="#read-csv" title="Permanent link">&para;</a></h2>
 <p>Sample data <code>weather_data.csv</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">day</span><span class="p">,</span><span class="n">temp</span><span class="p">,</span><span class="n">condition</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">Monday</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="n">Sunny</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Tuesday</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="n">Rain</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">Wednesday</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="n">Rain</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">Thursday</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="n">Cloudy</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">Friday</span><span class="p">,</span><span class="mi">21</span><span class="p">,</span><span class="n">Sunny</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">Saturday</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="n">Sunny</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">Sunday</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="n">Sunny</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">day</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">condition</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">Monday</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="n">Sunny</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">Tuesday</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="n">Rain</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">Wednesday</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="n">Rain</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">Thursday</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="n">Cloudy</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">Friday</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="n">Sunny</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">Saturday</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="n">Sunny</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">Sunday</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="n">Sunny</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;weather_data.csv&quot;</span><span class="p">)</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;weather_data.csv&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </code></pre></div>
-<p>Output is nicely formatted
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>         <span class="n">day</span>  <span class="n">temp</span> <span class="n">condition</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="mi">0</span>     <span class="n">Monday</span>    <span class="mi">12</span>     <span class="n">Sunny</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="mi">1</span>    <span class="n">Tuesday</span>    <span class="mi">14</span>      <span class="n">Rain</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="mi">2</span>  <span class="n">Wednesday</span>    <span class="mi">15</span>      <span class="n">Rain</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="mi">3</span>   <span class="n">Thursday</span>    <span class="mi">14</span>    <span class="n">Cloudy</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="mi">4</span>     <span class="n">Friday</span>    <span class="mi">21</span>     <span class="n">Sunny</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="mi">5</span>   <span class="n">Saturday</span>    <span class="mi">22</span>     <span class="n">Sunny</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="mi">6</span>     <span class="n">Sunday</span>    <span class="mi">24</span>     <span class="n">Sunny</span>
-</code></pre></div></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;temp&quot;</span><span class="p">])</span>
+<p>Output is nicely formatted</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>         <span class="n">day</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">temp</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">condition</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="mi">0</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">Monday</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="mi">12</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">Sunny</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="mi">1</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="n">Tuesday</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="mi">14</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="n">Rain</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="mi">2</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="n">Wednesday</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="mi">15</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="n">Rain</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="mi">3</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="n">Thursday</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="mi">14</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="n">Cloudy</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="mi">4</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="n">Friday</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="mi">21</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="n">Sunny</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="mi">5</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="n">Saturday</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="mi">22</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="n">Sunny</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="mi">6</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="n">Sunday</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="mi">24</span>
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a><span class="n">Sunny</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;temp&quot;</span><span class="p">])</span>
 </code></pre></div>
 <p>Output</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="mi">0</span>    <span class="mi">12</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="mi">1</span>    <span class="mi">14</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="mi">2</span>    <span class="mi">15</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="mi">3</span>    <span class="mi">14</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="mi">4</span>    <span class="mi">21</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="mi">5</span>    <span class="mi">22</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="mi">6</span>    <span class="mi">24</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">Name</span><span class="p">:</span> <span class="n">temp</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="mi">0</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="mi">12</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="mi">1</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="mi">14</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="mi">2</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="mi">15</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="mi">3</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="mi">14</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="mi">4</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="mi">21</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="mi">5</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="mi">22</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="mi">6</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="mi">24</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="n">Name</span><span class="p">:</span> <span class="n">temp</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
 </code></pre></div>
 <h2 id="dataframe-and-series-working-with-rows-and-columns">DataFrame and Series: working with rows and columns<a class="headerlink" href="#dataframe-and-series-working-with-rows-and-columns" title="Permanent link">&para;</a></h2>
 <h3 id="dataframe"><code>DataFrame</code><a class="headerlink" href="#dataframe" title="Permanent link">&para;</a></h3>
@@ -3159,38 +4386,458 @@
 <blockquote>
 <p>A <code>DataFrame</code> is Two-dimensional, size-mutable, potentially heterogeneous tabular data.</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">))</span> <span class="c1">#&lt;class &#39;pandas.DataFrame&#39;&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;pandas.DataFrame&#39;&gt;</span>
 </code></pre></div>
-<h3 id="series"><code>Series</code><a class="headerlink" href="#series" title="Permanent link">&para;</a></h3>
+<h4 id="dataframe-functions">DataFrame functions<a class="headerlink" href="#dataframe-functions" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>Method / Attribute</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pd.read_csv()</td>
+<td>Load CSV file into a DataFrame</td>
+<td>df = pd.read_csv("file.csv")</td>
+</tr>
+<tr>
+<td>df.head(n)</td>
+<td>First n rows (default 5)</td>
+<td>df.head()</td>
+</tr>
+<tr>
+<td>df.tail(n)</td>
+<td>Last n rows</td>
+<td>df.tail(10)</td>
+</tr>
+<tr>
+<td>df.shape</td>
+<td>Number of rows and columns</td>
+<td>df.shape</td>
+</tr>
+<tr>
+<td>df.count()</td>
+<td>Number entries per column</td>
+<td>df.count()</td>
+</tr>
+<tr>
+<td>df.columns</td>
+<td>Column names</td>
+<td>df.columns</td>
+</tr>
+<tr>
+<td>df.dtypes</td>
+<td>Data types of columns</td>
+<td>df.dtypes</td>
+</tr>
+<tr>
+<td>df.info()</td>
+<td>Summary of DataFrame (types, nulls)</td>
+<td>df.info()</td>
+</tr>
+<tr>
+<td>df.describe()</td>
+<td>Statistical summary of numeric columns</td>
+<td>df.describe()</td>
+</tr>
+<tr>
+<td>df["col"]</td>
+<td>Select a single column</td>
+<td>df["age"]</td>
+</tr>
+<tr>
+<td>df[["col1","col2"]]</td>
+<td>Select multiple columns</td>
+<td>df[["age","name"]]</td>
+</tr>
+<tr>
+<td>df.loc[]</td>
+<td>Label-based row/column selection</td>
+<td>df.loc[0:5, ["age"]]</td>
+</tr>
+<tr>
+<td>df.iloc[]</td>
+<td>Position-based row/column selection</td>
+<td>df.iloc[0:5, 0:2]</td>
+</tr>
+<tr>
+<td>df.at[]</td>
+<td>Access single value by label</td>
+<td>df.at[0, "age"]</td>
+</tr>
+<tr>
+<td>df.iat[]</td>
+<td>Access single value by position</td>
+<td>df.iat[0, 1]</td>
+</tr>
+<tr>
+<td>df.query()</td>
+<td>Filter rows using expression</td>
+<td>df.query("age &gt; 30")</td>
+</tr>
+<tr>
+<td>df[df["col"] &gt; value]</td>
+<td>Boolean filtering</td>
+<td>df_btc_price[df_btc_price.isna().any(axis=1)]</td>
+</tr>
+<tr>
+<td>df.value_counts()</td>
+<td>Count unique values in a column</td>
+<td>df["city"].value_counts()</td>
+</tr>
+<tr>
+<td>df.unique()</td>
+<td>Get unique values</td>
+<td>df["city"].unique()</td>
+</tr>
+<tr>
+<td>df.nunique()</td>
+<td>Count unique values</td>
+<td>df["city"].nunique()</td>
+</tr>
+<tr>
+<td>df.isnull()</td>
+<td>Detect missing values</td>
+<td>df.isnull()</td>
+</tr>
+<tr>
+<td>df.isna()</td>
+<td>Detect non numeric values</td>
+<td>df.isna()</td>
+</tr>
+<tr>
+<td>df.dropna()</td>
+<td>New df with dropped non numeric values</td>
+<td>clean_df = df.isna()</td>
+</tr>
+<tr>
+<td>df.notnull()</td>
+<td>Detect non-missing values</td>
+<td>df.notnull()</td>
+</tr>
+<tr>
+<td>df.sample(n)</td>
+<td>Random sample of rows</td>
+<td>df.sample(5)</td>
+</tr>
+<tr>
+<td>df.sort_values()</td>
+<td>Sort by column</td>
+<td>df_apps_clean.sort_values(by=['col1', 'col2'], ascending=[True, False], inplace=False)</td>
+</tr>
+<tr>
+<td>df.groupby()</td>
+<td>Group data for aggregation</td>
+<td>df.groupby("city").mean()</td>
+</tr>
+<tr>
+<td>df.drop</td>
+<td>Delete (drop) column</td>
+<td>df.drop(columns=["col4"], inplace=True)</td>
+</tr>
+<tr>
+<td>df.duplicate()</td>
+<td>Creates a filter mask for duplicated rows</td>
+<td>print(f"Are there duplicates?: {len(df[df.duplicated()]) &gt; 0}")</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pivoting-dataframe">Pivoting DataFrame<a class="headerlink" href="#pivoting-dataframe" title="Permanent link">&para;</a></h3>
+<p>📥 Sample Data</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>    <span class="s2">&quot;date&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;2024-01-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2024-01-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2024-01-02&quot;</span><span class="p">,</span> <span class="s2">&quot;2024-01-02&quot;</span><span class="p">],</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Amsterdam&quot;</span><span class="p">,</span> <span class="s2">&quot;Rotterdam&quot;</span><span class="p">,</span> <span class="s2">&quot;Amsterdam&quot;</span><span class="p">,</span> <span class="s2">&quot;Rotterdam&quot;</span><span class="p">],</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    <span class="s2">&quot;sales&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">250</span><span class="p">]</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="p">}</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</code></pre></div>
+<p>Output</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>         date       city  sales
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>0  2024-01-01  Amsterdam    100
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>1  2024-01-01  Rotterdam    150
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>2  2024-01-02  Amsterdam    200
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>3  2024-01-02  Rotterdam    250
+</code></pre></div>
+<p>🔁 Pivot the Data</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">pivot_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;city&quot;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;sales&quot;</span><span class="p">)</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">pivot_df</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>city        Amsterdam  Rotterdam
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>date                           
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>2024-01-01        100        150
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>2024-01-02        200        250
+</code></pre></div>
+<p>Explanation
+index → rows (date)
+columns → new columns (city)
+values → cell values (sales)</p>
+<p>Bonus: Using pivot_table (handles duplicates)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">pivot_table_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="n">index</span><span class="o">=</span><span class="s2">&quot;date&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;city&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="n">values</span><span class="o">=</span><span class="s2">&quot;sales&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="n">aggfunc</span><span class="o">=</span><span class="s2">&quot;sum&quot;</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="p">)</span>
+</code></pre></div>
+<h4 id="handling-nan">Handling <code>NaN</code><a class="headerlink" href="#handling-nan" title="Permanent link">&para;</a></h4>
+<p>For missing values, the pivot table will have <code>NaN</code>, we can replace it with</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">df_pivot</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">&quot;Date&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;TagName&quot;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;NumTags&quot;</span><span class="p">)</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">df_pivot</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>agName     assembly      c      c#    c++  delphi  go    java  javascript  \
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>Date                                                                         
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>2008-07-01       NaN    NaN     3.0    NaN     NaN NaN     NaN         NaN   
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>2008-08-01       8.0   82.0   503.0  164.0    13.0 NaN   220.0       160.0   
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>2008-09-01      28.0  320.0  1637.0  749.0   104.0 NaN  1121.0       629.0   
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>2008-10-01      16.0  302.0  1982.0  804.0   112.0 NaN  1142.0       720.0   
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>2008-11-01      16.0  257.0  1728.0  733.0   139.0 NaN   951.0       581.0   
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">df_pivot</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">df_pivot</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>TagName     assembly      c      c#    c++  delphi   go    java  javascript  \
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>Date                                                                          
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>2008-07-01       0.0    0.0     3.0    0.0     0.0  0.0     0.0         0.0   
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>2008-08-01       8.0   82.0   503.0  164.0    13.0  0.0   220.0       160.0   
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>2008-09-01      28.0  320.0  1637.0  749.0   104.0  0.0  1121.0       629.0   
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>2008-10-01      16.0  302.0  1982.0  804.0   112.0  0.0  1142.0       720.0   
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>2008-11-01      16.0  257.0  1728.0  733.0   139.0  0.0   951.0       581.0   
+</code></pre></div>
+<h3 id="grouping-and-aggregating-data">Grouping and Aggregating Data<a class="headerlink" href="#grouping-and-aggregating-data" title="Permanent link">&para;</a></h3>
+<p>We can group columns</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;ColName&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</code></pre></div>
+<p>Every row column will have the same value with the count</p>
+<p>This gives the mean mid career salary per group</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">clean_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Group&#39;</span><span class="p">)[</span><span class="s1">&#39;Mid-Career Median Salary&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</code></pre></div>
+<p>It sums the values for each column on the grouped data frame</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">cdf</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;TagName&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</code></pre></div>
+<p>Then we can also add filtering or slicing on the grouped dataframe as usual</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">df_sets</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;year&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;year == 1955 | year == 2019&quot;</span><span class="p">)</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="c1"># df  -&gt;  DataFrameGroupBy -&gt; df </span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="c1"># sliced out the last two years</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="n">df_sets_per_full_year</span> <span class="o">=</span> <span class="n">df_sets</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;year&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[:</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span>
+</code></pre></div>
+<h3 id="grouping-by-multiple-columns">Grouping by multiple columns<a class="headerlink" href="#grouping-by-multiple-columns" title="Permanent link">&para;</a></h3>
+<p>Counts the number of Nobel prices won by category and sex</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1">#as_index false makes the first column not an index of the dataframe</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="n">cat_men_women</span> <span class="o">=</span> <span class="n">df_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;category&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">],</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>                               <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;prize&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="o">.</span><span class="n">count</span><span class="p">})</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">cat_men_women</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>  category     sex  prize
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>0    Chemistry  Female      7
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>1    Chemistry    Male    179
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>2    Economics  Female      2
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>3    Economics    Male     84
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>4   Literature  Female     16
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>5   Literature    Male    101
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>6     Medicine  Female     12
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>7     Medicine    Male    210
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>8        Peace  Female     17
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>9        Peace    Male     90
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>10     Physics  Female      4
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>11     Physics    Male    212
+</code></pre></div>
+<h3 id="the-agg-function">The <code>.agg()</code> function<a class="headerlink" href="#the-agg-function" title="Permanent link">&para;</a></h3>
+<p>The <code>.agg()</code> (short for aggregate) function in pandas is used to apply one or more aggregation operations (like <code>sum</code>,
+<code>mean</code>, <code>min</code>, <code>max</code>, etc.) across a <code>DataFrame</code> or <code>Series</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    <span class="s1">&#39;A&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>    <span class="s1">&#39;B&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="p">})</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="n">df</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s1">&#39;sum&#39;</span><span class="p">)</span> 
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>A     6
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>B    15
+</code></pre></div>
+<p>Multiple aggragations</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">df</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="s1">&#39;mean&#39;</span><span class="p">])</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>        A     B
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>sum   6.0  15.0
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>mean  2.0   5.0
+</code></pre></div>
+<p>Custom functions</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">df</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+</code></pre></div>
+<h3 id="combined-with-groupby">Combined with <code>groupby</code><a class="headerlink" href="#combined-with-groupby" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="s1">&#39;Category&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">],</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>    <span class="s1">&#39;Value&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="p">})</span>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Category&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s1">&#39;sum&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>Category
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>A    30
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>B    30
+</code></pre></div>
+<p>Multiple functions</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Category&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>    <span class="s1">&#39;Value&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="s1">&#39;mean&#39;</span><span class="p">]</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="p">})</span>
+</code></pre></div>
+<p>Number of unique values per specific column</p>
+<p>The function takes a <code>dict</code> as input with the column name and the aggregating function</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="c1"># the number of different (unique) themes per year </span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="n">df_sets</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;year&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s2">&quot;theme_id&quot;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="o">.</span><span class="n">nunique</span><span class="p">})</span>
+</code></pre></div>
+<h3 id="merge-dataframes">Merge dataframes<a class="headerlink" href="#merge-dataframes" title="Permanent link">&para;</a></h3>
+<p>Given the df</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">df_themes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/themes.csv&quot;</span><span class="p">)</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="n">theme_count_series</span> <span class="o">=</span> <span class="n">df_sets</span><span class="p">[</span><span class="s2">&quot;theme_id&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[::</span><span class="mi">5</span><span class="p">]</span>
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="n">df_theme_count</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">theme_count_series</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="s2">&quot;set_count&quot;</span><span class="p">:</span> <span class="n">theme_count_series</span><span class="o">.</span><span class="n">values</span><span class="p">})</span>
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">df_theme_count</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>    id  set_count
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>0  158        753
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>1  505        328
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>2  443        197
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>3  453        142
+<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>4   52        115
+</code></pre></div>
+<p>and</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>    <span class="nb">id</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="n">name</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="n">parent_id</span>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="mi">0</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a><span class="mi">1</span>
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a><span class="n">Technic</span>
+<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a><span class="n">NaN</span>
+<a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a><span class="mi">1</span>
+<a id="__codelineno-37-9" name="__codelineno-37-9" href="#__codelineno-37-9"></a><span class="mi">2</span>
+<a id="__codelineno-37-10" name="__codelineno-37-10" href="#__codelineno-37-10"></a><span class="n">Arctic</span>
+<a id="__codelineno-37-11" name="__codelineno-37-11" href="#__codelineno-37-11"></a><span class="n">Technic</span>
+<a id="__codelineno-37-12" name="__codelineno-37-12" href="#__codelineno-37-12"></a><span class="mf">1.0</span>
+<a id="__codelineno-37-13" name="__codelineno-37-13" href="#__codelineno-37-13"></a><span class="mi">2</span>
+<a id="__codelineno-37-14" name="__codelineno-37-14" href="#__codelineno-37-14"></a><span class="mi">3</span>
+<a id="__codelineno-37-15" name="__codelineno-37-15" href="#__codelineno-37-15"></a><span class="n">Competition</span>
+<a id="__codelineno-37-16" name="__codelineno-37-16" href="#__codelineno-37-16"></a><span class="mf">1.0</span>
+<a id="__codelineno-37-17" name="__codelineno-37-17" href="#__codelineno-37-17"></a><span class="mi">3</span>
+<a id="__codelineno-37-18" name="__codelineno-37-18" href="#__codelineno-37-18"></a><span class="mi">4</span>
+<a id="__codelineno-37-19" name="__codelineno-37-19" href="#__codelineno-37-19"></a><span class="n">Expert</span>
+<a id="__codelineno-37-20" name="__codelineno-37-20" href="#__codelineno-37-20"></a><span class="n">Builder</span>
+<a id="__codelineno-37-21" name="__codelineno-37-21" href="#__codelineno-37-21"></a><span class="mf">1.0</span>
+<a id="__codelineno-37-22" name="__codelineno-37-22" href="#__codelineno-37-22"></a><span class="mi">4</span>
+<a id="__codelineno-37-23" name="__codelineno-37-23" href="#__codelineno-37-23"></a><span class="mi">5</span>
+<a id="__codelineno-37-24" name="__codelineno-37-24" href="#__codelineno-37-24"></a><span class="n">Model</span>
+<a id="__codelineno-37-25" name="__codelineno-37-25" href="#__codelineno-37-25"></a><span class="mf">1.0</span>
+</code></pre></div>
+<blockquote>
+<p>It is important that they share the same merge column name (<code>id</code>)</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>merged_df = pd.merge(df_theme_count, df_themes, on=&#39;id&#39;)
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>print(merged_df.head())
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>    id  set_count           name  parent_id
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>0  158        753      Star Wars        NaN
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>1  505        328      Basic Set      504.0
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>2  443        197  Service Packs        NaN
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>3  453        142        Technic      443.0
+<a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a>4   52        115           City       50.0
+</code></pre></div>
+<h3 id="split-and-stack-groups">Split and stack groups<a class="headerlink" href="#split-and-stack-groups" title="Permanent link">&para;</a></h3>
+<p>Suppose we have a group by a field where a single row can have multiple field values.
+For instance, we have a app dataframe where an app in a row can have more Genres (; separated)
+If we run a group by genres the generet index value will contain multiple genres</p>
+<p>We need to split the genres and then stack the group by</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="n">df_apps_clean</span><span class="p">[</span><span class="s1">&#39;Genres&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</code></pre></div>
+<p>It contains <code>;</code> separated values</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>Genres
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>Tools                                  732
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>Entertainment                          498
+<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>                                      ... 
+<a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a>Health &amp; Fitness;Action &amp; Adventure      1
+<a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>Casual;Music &amp; Video                     1
+<a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a>Lifestyle;Pretend Play                   1
+<a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a>Name: count, Length: 115, dtype: int64
+</code></pre></div>
+<p>we have 115 different values.</p>
+<p>We can <code>split</code> and then <code>stack</code> the values</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="c1"># Split the strings on the semi-colon and then .stack them.</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="n">stacked_series</span> <span class="o">=</span> <span class="n">df_apps_clean</span><span class="o">.</span><span class="n">Genres</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">stack</span><span class="p">()</span>
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;We now have a single column with shape: </span><span class="si">{</span><span class="n">stack</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a><span class="n">num_genres</span> <span class="o">=</span> <span class="n">stacked_series</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Number of genres: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">num_genres</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="resampling">Resampling<a class="headerlink" href="#resampling" title="Permanent link">&para;</a></h3>
+<p>Convenience method for frequency conversion and resampling of time series. The object must have a datetime-like index (
+DatetimeIndex, PeriodIndex, or TimedeltaIndex), or the caller must pass the label of a datetime-like series/index to the
+on/level keyword parameter.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>print(df_btc_price.head())
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>  DATE       CLOSE      VOLUME
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>0 2014-09-17  457.334015  21056800.0
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>1 2014-09-18  424.440002  34483200.0
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>2 2014-09-19  394.795990  37919700.0
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>3 2014-09-20  408.903992  36863600.0
+<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>4 2014-09-21  398.821014  26580100.0
+</code></pre></div>
+<p>Apply the resampling</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="n">df_btc_price_montly</span> <span class="o">=</span> <span class="n">df_btc_price</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;ME&#39;</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;DATE&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">last</span><span class="p">()</span>
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a><span class="n">df_btc_price_montly</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div>
+<h4 id="aggregating-function">Aggregating function<a class="headerlink" href="#aggregating-function" title="Permanent link">&para;</a></h4>
+<p><code>last()</code> takes the last row in the df, so, if not sorted can be misleading.</p>
+<p>Better sort by date before with <code>df_btc_price = df_btc_price.sort_values('DATE')</code></p>
+<p>Other aggregating functions are:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;DATE&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>  <span class="c1"># average price per month</span>
+<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;DATE&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>  <span class="c1"># max price per month</span>
+<a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;DATE&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">ohlc</span><span class="p">()</span>  <span class="c1"># OHLC (great for trading data)</span>
+</code></pre></div>
+<p>Resample based on the last row of the <code>M</code> (month)</p>
+<table>
+<thead>
+<tr>
+<th>Frequency</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>'ME'</code></td>
+<td>Month <strong>end</strong> (e.g., 2024-01-31)</td>
+</tr>
+<tr>
+<td><code>'MS'</code></td>
+<td>Month <strong>start</strong> (e.g., 2024-01-01)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="series"><code>Series</code><a class="headerlink" href="#series" title="Permanent link">&para;</a></h2>
 <p>A <code>DataFrame</code> composes <a href="https://pandas.pydata.org/docs/reference/series.html">Series</a></p>
 <blockquote>
 <p>A <code>Series</code> One-dimensional ndarray with axis labels (including time series).
 Similar to the columns in the <code>DataFrame</code> table</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;temp&quot;</span><span class="p">]))</span> <span class="c1">#&lt;class &#39;pandas.Series&#39;&gt;</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span> <span class="c1">#&lt;class &#39;pandas.Series&#39;&gt;</span>
-</code></pre></div>
-<h4 id="series-functions">Series functions<a class="headerlink" href="#series-functions" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">temp_series</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;temp&quot;</span><span class="p">]</span> <span class="c1"># or data.temp</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">temperatures_list</span> <span class="o">=</span><span class="n">temp_series</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">average_temp</span> <span class="o">=</span> <span class="n">temp_series</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures_list</span><span class="p">)</span> <span class="c1">#[12, 14, 15, 14, 21, 22, 24]</span>
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">average_temp</span><span class="p">)</span> <span class="c1">#17.428571428571427</span>
-<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">temp_series</span><span class="o">.</span><span class="n">max</span><span class="p">())</span> <span class="c1">#24</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;temp&quot;</span><span class="p">]))</span>  <span class="c1"># &lt;class &#39;pandas.Series&#39;&gt;</span>
+<a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;pandas.Series&#39;&gt;</span>
 </code></pre></div>
 <h2 id="extracting-columns-as-series">Extracting columns as <code>Series</code><a class="headerlink" href="#extracting-columns-as-series" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;weather_data.csv&quot;</span><span class="p">)</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1">#Extract column data (excluding the head)</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">day_series</span><span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;day&quot;</span><span class="p">]</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">temp_series</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;temp&quot;</span><span class="p">]</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">condition_series</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">condition</span>
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">condition_series</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;weather_data.csv&quot;</span><span class="p">)</span>
+<a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>
+<a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a><span class="c1"># Extract column data (excluding the head)</span>
+<a id="__codelineno-48-4" name="__codelineno-48-4" href="#__codelineno-48-4"></a><span class="n">day_series</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;day&quot;</span><span class="p">]</span>
+<a id="__codelineno-48-5" name="__codelineno-48-5" href="#__codelineno-48-5"></a><span class="n">temp_series</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;temp&quot;</span><span class="p">]</span>
+<a id="__codelineno-48-6" name="__codelineno-48-6" href="#__codelineno-48-6"></a><span class="n">condition_series</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">condition</span>
+<a id="__codelineno-48-7" name="__codelineno-48-7" href="#__codelineno-48-7"></a>
+<a id="__codelineno-48-8" name="__codelineno-48-8" href="#__codelineno-48-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">condition_series</span><span class="p">)</span>
 </code></pre></div>
 <p>Output
 <code>0     Sunny
@@ -3200,35 +4847,526 @@ Similar to the columns in the <code>DataFrame</code> table</p>
 4     Sunny
 5     Sunny
 6     Sunny</code></p>
+<h3 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h3 id="series-functions">Series functions<a class="headerlink" href="#series-functions" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>
+<a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a><span class="n">temp_series</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;temp&quot;</span><span class="p">]</span>  <span class="c1"># or data.temp</span>
+<a id="__codelineno-49-4" name="__codelineno-49-4" href="#__codelineno-49-4"></a>
+<a id="__codelineno-49-5" name="__codelineno-49-5" href="#__codelineno-49-5"></a><span class="n">temperatures_list</span> <span class="o">=</span> <span class="n">temp_series</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<a id="__codelineno-49-6" name="__codelineno-49-6" href="#__codelineno-49-6"></a><span class="n">average_temp</span> <span class="o">=</span> <span class="n">temp_series</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<a id="__codelineno-49-7" name="__codelineno-49-7" href="#__codelineno-49-7"></a>
+<a id="__codelineno-49-8" name="__codelineno-49-8" href="#__codelineno-49-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">temperatures_list</span><span class="p">)</span>  <span class="c1"># [12, 14, 15, 14, 21, 22, 24]</span>
+<a id="__codelineno-49-9" name="__codelineno-49-9" href="#__codelineno-49-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">average_temp</span><span class="p">)</span>  <span class="c1"># 17.428571428571427</span>
+<a id="__codelineno-49-10" name="__codelineno-49-10" href="#__codelineno-49-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">temp_series</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>  <span class="c1"># 24</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Method / Attribute</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>df["col"]</td>
+<td>Select column as Series</td>
+<td>s = df["age"]</td>
+</tr>
+<tr>
+<td>s.head(n)</td>
+<td>First n values</td>
+<td>s.head()</td>
+</tr>
+<tr>
+<td>s.tail(n)</td>
+<td>Last n values</td>
+<td>s.tail(10)</td>
+</tr>
+<tr>
+<td>s.shape</td>
+<td>Length of the Series</td>
+<td>s.shape</td>
+</tr>
+<tr>
+<td>s.index</td>
+<td>Index labels</td>
+<td>s.index</td>
+</tr>
+<tr>
+<td>s.values</td>
+<td>Underlying array</td>
+<td>s.values</td>
+</tr>
+<tr>
+<td>s.dtype</td>
+<td>Data type</td>
+<td>s.dtype</td>
+</tr>
+<tr>
+<td>s.describe()</td>
+<td>Summary statistics</td>
+<td>s.describe()</td>
+</tr>
+<tr>
+<td>s.mean()</td>
+<td>Mean value</td>
+<td>s.mean()</td>
+</tr>
+<tr>
+<td>s.median()</td>
+<td>Median value</td>
+<td>s.median()</td>
+</tr>
+<tr>
+<td>s.min() / s.max()</td>
+<td>Minimum / Maximum</td>
+<td>s.min(), s.max()</td>
+</tr>
+<tr>
+<td>s.idxmin() / s.idxmax()</td>
+<td>Index of min / max value</td>
+<td>s.idxmax()</td>
+</tr>
+<tr>
+<td>s.sum()</td>
+<td>Sum of values</td>
+<td>s.sum()</td>
+</tr>
+<tr>
+<td>s.std()</td>
+<td>Standard deviation</td>
+<td>s.std()</td>
+</tr>
+<tr>
+<td>s.count()</td>
+<td>Count non-null values</td>
+<td>s.count()</td>
+</tr>
+<tr>
+<td>s.unique()</td>
+<td>Unique values</td>
+<td>s.unique()</td>
+</tr>
+<tr>
+<td>s.nunique()</td>
+<td>Number of unique values</td>
+<td>s.nunique()</td>
+</tr>
+<tr>
+<td>s.value_counts()</td>
+<td>Frequency of unique values</td>
+<td>s.value_counts()</td>
+</tr>
+<tr>
+<td>s.isnull()</td>
+<td>Detect missing values</td>
+<td>s.isnull()</td>
+</tr>
+<tr>
+<td>s.notnull()</td>
+<td>Detect non-missing values</td>
+<td>s.notnull()</td>
+</tr>
+<tr>
+<td>s.fillna(value)</td>
+<td>Replace missing values</td>
+<td>s.fillna(0)</td>
+</tr>
+<tr>
+<td>s.dropna()</td>
+<td>Remove missing values</td>
+<td>s.dropna()</td>
+</tr>
+<tr>
+<td>s.astype(type)</td>
+<td>Convert data type</td>
+<td>s.astype(int)</td>
+</tr>
+<tr>
+<td>s.sort_values()</td>
+<td>Sort values</td>
+<td>s.sort_values()</td>
+</tr>
+<tr>
+<td>s.sort_index()</td>
+<td>Sort by index</td>
+<td>s.sort_index()</td>
+</tr>
+<tr>
+<td>s.apply(func)</td>
+<td>Apply function element-wise</td>
+<td>s.apply(lambda x: x*2)</td>
+</tr>
+<tr>
+<td>s.map(func/dict)</td>
+<td>Map values using function or dict</td>
+<td>s.map({"A":1,"B":2})</td>
+</tr>
+<tr>
+<td>s.replace()</td>
+<td>Replace specific values</td>
+<td>s.replace("A","X")</td>
+</tr>
+<tr>
+<td>s.between(a, b)</td>
+<td>Filter values within range</td>
+<td>s[s.between(10, 20)]</td>
+</tr>
+<tr>
+<td>s.clip(lower, upper)</td>
+<td>Limit values to bounds</td>
+<td>s.clip(0, 100)</td>
+</tr>
+<tr>
+<td>s.iloc[]</td>
+<td>Position-based access</td>
+<td>s.iloc[0]</td>
+</tr>
+<tr>
+<td>s.loc[]</td>
+<td>Label-based access</td>
+<td>s.loc[s.idmax()]</td>
+</tr>
+<tr>
+<td>s.cumsum()</td>
+<td>Cumulative sum</td>
+<td>s.cumsum()</td>
+</tr>
+<tr>
+<td>s.rolling(window).mean()</td>
+<td>Rolling average</td>
+<td>s.rolling(3).mean()</td>
+</tr>
+</tbody>
+</table>
+<h3 id="series-manipulation-functions">Series manipulation functions<a class="headerlink" href="#series-manipulation-functions" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Method / Attribute</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>df['col1'].subtract(df['col2'])</td>
+<td>Subtract (or <code>-</code>)</td>
+<td>diff_col = df['col1'].subtract(df['col2'])</td>
+</tr>
+<tr>
+<td>clean_df.insert(&lt;#_col&gt;, <label>, <series>)</td>
+<td>Insert series in DF</td>
+<td>df.insert(1, 'Spread', diff_col)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="series-string-methods-sstr">Series String Methods (<code>s.str</code>)<a class="headerlink" href="#series-string-methods-sstr" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="n">df_apps_top_review_50</span><span class="p">[</span><span class="n">df_apps_top_review_50</span><span class="p">[</span><span class="s1">&#39;Type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;Free&#39;</span><span class="p">,</span> <span class="n">case</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">)]</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s.str.lower()</td>
+<td>Convert to lowercase</td>
+<td>s.str.lower()</td>
+</tr>
+<tr>
+<td>s.str.upper()</td>
+<td>Convert to uppercase</td>
+<td>s.str.upper()</td>
+</tr>
+<tr>
+<td>s.str.title()</td>
+<td>Title case</td>
+<td>s.str.title()</td>
+</tr>
+<tr>
+<td>s.str.strip()</td>
+<td>Remove leading/trailing spaces</td>
+<td>s.str.strip()</td>
+</tr>
+<tr>
+<td>s.str.lstrip()</td>
+<td>Remove leading spaces</td>
+<td>s.str.lstrip()</td>
+</tr>
+<tr>
+<td>s.str.rstrip()</td>
+<td>Remove trailing spaces</td>
+<td>s.str.rstrip()</td>
+</tr>
+<tr>
+<td>s.str.len()</td>
+<td>Length of each string</td>
+<td>s.str.len()</td>
+</tr>
+<tr>
+<td>s.str.contains(pat)</td>
+<td>Check if pattern exists</td>
+<td>s.str.contains("abc")</td>
+</tr>
+<tr>
+<td>s.str.startswith(pat)</td>
+<td>Check prefix</td>
+<td>s.str.startswith("A")</td>
+</tr>
+<tr>
+<td>s.str.endswith(pat)</td>
+<td>Check suffix</td>
+<td>s.str.endswith("Z")</td>
+</tr>
+<tr>
+<td>s.str.replace(a, b)</td>
+<td>Replace substring</td>
+<td>s.str.replace("old","new")</td>
+</tr>
+<tr>
+<td>s.str.split(sep)</td>
+<td>Split strings into lists</td>
+<td>s.str.split(",")</td>
+</tr>
+<tr>
+<td>s.str.get(i)</td>
+<td>Get element from split/list</td>
+<td>s.str.split(",").str.get(0)</td>
+</tr>
+<tr>
+<td>s.str.join(sep)</td>
+<td>Join list elements into string</td>
+<td>s.str.join("-")</td>
+</tr>
+<tr>
+<td>s.str.extract(regex)</td>
+<td>Extract regex group</td>
+<td>s.str.extract(r"(\d+)")</td>
+</tr>
+<tr>
+<td>s.str.findall(regex)</td>
+<td>Find all regex matches</td>
+<td>s.str.findall(r"\d+")</td>
+</tr>
+<tr>
+<td>s.str.match(regex)</td>
+<td>Match regex from start</td>
+<td>s.str.match(r"^A")</td>
+</tr>
+<tr>
+<td>s.str.pad(width)</td>
+<td>Pad strings to width</td>
+<td>s.str.pad(10)</td>
+</tr>
+<tr>
+<td>s.str.slice(start, stop)</td>
+<td>Slice substrings</td>
+<td>s.str.slice(0, 3)</td>
+</tr>
+<tr>
+<td>s.str.cat(sep)</td>
+<td>Concatenate strings</td>
+<td>s.str.cat(sep=",")</td>
+</tr>
+<tr>
+<td>s.str.isnumeric()</td>
+<td>Check if numeric string</td>
+<td>s.str.isnumeric()</td>
+</tr>
+<tr>
+<td>s.str.isalpha()</td>
+<td>Check if alphabetic</td>
+<td>s.str.isalpha()</td>
+</tr>
+</tbody>
+</table>
+<h3 id="series-datetime-methods-sdt">Series 📅 Datetime Methods (<code>s.dt</code>)<a class="headerlink" href="#series-datetime-methods-sdt" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pd.to_datetime(s)</td>
+<td>Convert Series to datetime</td>
+<td>s = pd.to_datetime(s)</td>
+</tr>
+<tr>
+<td>s.dt.date</td>
+<td>Extract date</td>
+<td>s.dt.date</td>
+</tr>
+<tr>
+<td>s.dt.time</td>
+<td>Extract time</td>
+<td>s.dt.time</td>
+</tr>
+<tr>
+<td>s.dt.year</td>
+<td>Extract year</td>
+<td>s.dt.year</td>
+</tr>
+<tr>
+<td>s.dt.month</td>
+<td>Extract month</td>
+<td>s.dt.month</td>
+</tr>
+<tr>
+<td>s.dt.day</td>
+<td>Extract day</td>
+<td>s.dt.day</td>
+</tr>
+<tr>
+<td>s.dt.hour</td>
+<td>Extract hour</td>
+<td>s.dt.hour</td>
+</tr>
+<tr>
+<td>s.dt.minute</td>
+<td>Extract minute</td>
+<td>s.dt.minute</td>
+</tr>
+<tr>
+<td>s.dt.second</td>
+<td>Extract second</td>
+<td>s.dt.second</td>
+</tr>
+<tr>
+<td>s.dt.dayofweek</td>
+<td>Day of week (0=Mon)</td>
+<td>s.dt.dayofweek</td>
+</tr>
+<tr>
+<td>s.dt.day_name()</td>
+<td>Name of day</td>
+<td>s.dt.day_name()</td>
+</tr>
+<tr>
+<td>s.dt.month_name()</td>
+<td>Name of month</td>
+<td>s.dt.month_name()</td>
+</tr>
+<tr>
+<td>s.dt.quarter</td>
+<td>Quarter of year</td>
+<td>s.dt.quarter</td>
+</tr>
+<tr>
+<td>s.dt.is_month_start</td>
+<td>Check if first day of month</td>
+<td>s.dt.is_month_start</td>
+</tr>
+<tr>
+<td>s.dt.is_month_end</td>
+<td>Check if last day of month</td>
+<td>s.dt.is_month_end</td>
+</tr>
+<tr>
+<td>s.dt.tz_localize(tz)</td>
+<td>Set timezone</td>
+<td>s.dt.tz_localize("UTC")</td>
+</tr>
+<tr>
+<td>s.dt.tz_convert(tz)</td>
+<td>Convert timezone</td>
+<td>s.dt.tz_convert("Europe/Amsterdam")</td>
+</tr>
+<tr>
+<td>s.dt.strftime(fmt)</td>
+<td>Format datetime to string</td>
+<td>s.dt.strftime("%Y-%m-%d")</td>
+</tr>
+<tr>
+<td>s.dt.round(freq)</td>
+<td>Round datetime</td>
+<td>s.dt.round("H")</td>
+</tr>
+<tr>
+<td>s.dt.floor(freq)</td>
+<td>Floor datetime</td>
+<td>s.dt.floor("D")</td>
+</tr>
+<tr>
+<td>s.dt.ceil(freq)</td>
+<td>Ceil datetime</td>
+<td>s.dt.ceil("D")</td>
+</tr>
+</tbody>
+</table>
 <h2 id="extracting-rows-as-dataframe">Extracting rows as <code>DataFrame</code><a class="headerlink" href="#extracting-rows-as-dataframe" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Get data in row</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">monday_data</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">day</span><span class="o">==</span> <span class="s2">&quot;Monday&quot;</span><span class="p">]</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">monday_data</span><span class="p">)</span> <span class="c1">#still a DataFrame</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="c1"># Get data in row</span>
+<a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a><span class="n">monday_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">day</span> <span class="o">==</span> <span class="s2">&quot;Monday&quot;</span><span class="p">]</span>
+<a id="__codelineno-51-3" name="__codelineno-51-3" href="#__codelineno-51-3"></a>
+<a id="__codelineno-51-4" name="__codelineno-51-4" href="#__codelineno-51-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">monday_data</span><span class="p">)</span>  <span class="c1"># still a DataFrame</span>
 </code></pre></div>
 <p>Output
 <code>Name: condition, dtype: str
       day  temp condition
 0  Monday    12     Sunny</code></p>
-<h4 id="conversion-to-dict">Conversion to dict<a class="headerlink" href="#conversion-to-dict" title="Permanent link">&para;</a></h4>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;weather_data.csv&quot;</span><span class="p">)</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">data_dict</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
-<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">data_dict</span><span class="p">)</span>
+<h2 id="create-dataframe-from-series">Create dataframe from series<a class="headerlink" href="#create-dataframe-from-series" title="Permanent link">&para;</a></h2>
+<p>We can use a dict</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="c1"># counts the rows with the same theme_id and slices until the last 5 rows</span>
+<a id="__codelineno-52-2" name="__codelineno-52-2" href="#__codelineno-52-2"></a><span class="n">theme_count_series</span> <span class="o">=</span> <span class="n">df_sets</span><span class="p">[</span><span class="s2">&quot;theme_id&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[::</span><span class="mi">5</span><span class="p">]</span>
+<a id="__codelineno-52-3" name="__codelineno-52-3" href="#__codelineno-52-3"></a><span class="nb">type</span><span class="p">(</span><span class="n">theme_count_series</span><span class="p">)</span>  <span class="c1"># series</span>
+<a id="__codelineno-52-4" name="__codelineno-52-4" href="#__codelineno-52-4"></a>
+<a id="__codelineno-52-5" name="__codelineno-52-5" href="#__codelineno-52-5"></a><span class="n">df_theme_count</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">theme_count_series</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="s2">&quot;set_count&quot;</span><span class="p">:</span> <span class="n">theme_count_series</span><span class="o">.</span><span class="n">values</span><span class="p">})</span>
+<a id="__codelineno-52-6" name="__codelineno-52-6" href="#__codelineno-52-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">df_theme_count</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </code></pre></div>
-The ouptut is a dictionary with keys equal to the column names and values the series corresponding to that column</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>        id  set_count
+<a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a>0       158        753
+<a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a>1       505        328
+<a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a>2       443        197
+<a id="__codelineno-53-5" name="__codelineno-53-5" href="#__codelineno-53-5"></a>3       453        142
+<a id="__codelineno-53-6" name="__codelineno-53-6" href="#__codelineno-53-6"></a>4        52        115
+</code></pre></div>
+<h3 id="merge-two-dataframes">Merge two dataframes<a class="headerlink" href="#merge-two-dataframes" title="Permanent link">&para;</a></h3>
+<p>To <code>.merge()</code> two DataFrame along a particular column, we need to provide our two DataFrames and then the column name on
+which to merge.
+This is why we set <code>on='id'</code>. Both our <code>set_theme_count</code> and our <code>themes</code> DataFrames have a column with this name.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="n">df_themes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/themes.csv&quot;</span><span class="p">)</span>
+<a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a><span class="c1"># from previous chapter </span>
+<a id="__codelineno-54-3" name="__codelineno-54-3" href="#__codelineno-54-3"></a><span class="n">theme_count_series</span>
+<a id="__codelineno-54-4" name="__codelineno-54-4" href="#__codelineno-54-4"></a>
+<a id="__codelineno-54-5" name="__codelineno-54-5" href="#__codelineno-54-5"></a><span class="n">merged_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_theme_count</span><span class="p">,</span> <span class="n">df_themes</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="p">)</span>
+<a id="__codelineno-54-6" name="__codelineno-54-6" href="#__codelineno-54-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">merged_df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>    id  set_count           name  parent_id
+<a id="__codelineno-55-2" name="__codelineno-55-2" href="#__codelineno-55-2"></a>0  158        753      Star Wars        NaN
+<a id="__codelineno-55-3" name="__codelineno-55-3" href="#__codelineno-55-3"></a>1  505        328      Basic Set      504.0
+<a id="__codelineno-55-4" name="__codelineno-55-4" href="#__codelineno-55-4"></a>2  443        197  Service Packs        NaN
+<a id="__codelineno-55-5" name="__codelineno-55-5" href="#__codelineno-55-5"></a>3  453        142        Technic      443.0
+<a id="__codelineno-55-6" name="__codelineno-55-6" href="#__codelineno-55-6"></a>4   52        115           City       50.0
+</code></pre></div>
+<h3 id="conversion-to-dict">Conversion to dict<a class="headerlink" href="#conversion-to-dict" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<a id="__codelineno-56-2" name="__codelineno-56-2" href="#__codelineno-56-2"></a>
+<a id="__codelineno-56-3" name="__codelineno-56-3" href="#__codelineno-56-3"></a><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;weather_data.csv&quot;</span><span class="p">)</span>
+<a id="__codelineno-56-4" name="__codelineno-56-4" href="#__codelineno-56-4"></a>
+<a id="__codelineno-56-5" name="__codelineno-56-5" href="#__codelineno-56-5"></a><span class="n">data_dict</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<a id="__codelineno-56-6" name="__codelineno-56-6" href="#__codelineno-56-6"></a>
+<a id="__codelineno-56-7" name="__codelineno-56-7" href="#__codelineno-56-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">data_dict</span><span class="p">)</span>
+</code></pre></div>
+<p>The ouptut is a dictionary with keys equal to the column names and values the series corresponding to that column</p>
 <p><code>{'day': {0: 'Monday', 1: 'Tuesday', 2: 'Wednesday', 3: 'Thursday', 4: 'Friday', 5: 'Saturday', 6: 'Sunday'}, 'temp': {0: 12, 1: 14, 2: 15, 3: 14, 4: 21, 5: 22, 6: 24}, 'condition': {0: 'Sunny', 1: 'Rain', 2: 'Rain', 3: 'Cloudy', 4: 'Sunny', 5: 'Sunny', 6: 'Sunny'}}</code></p>
 <h2 id="create-dataframe-from-dict">Create <code>DataFrame</code> from dict<a class="headerlink" href="#create-dataframe-from-dict" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">data_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;students&quot;</span><span class="p">:[</span><span class="s2">&quot;Amy&quot;</span><span class="p">,</span> <span class="s2">&quot;Wine&quot;</span><span class="p">,</span> <span class="s2">&quot;House&quot;</span><span class="p">],</span> <span class="s2">&quot;scores&quot;</span><span class="p">:[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">70</span><span class="p">]</span> <span class="p">}</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_dict</span><span class="p">)</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
-<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<a id="__codelineno-57-2" name="__codelineno-57-2" href="#__codelineno-57-2"></a>
+<a id="__codelineno-57-3" name="__codelineno-57-3" href="#__codelineno-57-3"></a><span class="n">data_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;students&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Amy&quot;</span><span class="p">,</span> <span class="s2">&quot;Wine&quot;</span><span class="p">,</span> <span class="s2">&quot;House&quot;</span><span class="p">],</span> <span class="s2">&quot;scores&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">70</span><span class="p">]}</span>
+<a id="__codelineno-57-4" name="__codelineno-57-4" href="#__codelineno-57-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_dict</span><span class="p">)</span>
+<a id="__codelineno-57-5" name="__codelineno-57-5" href="#__codelineno-57-5"></a><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">)</span>
+<a id="__codelineno-57-6" name="__codelineno-57-6" href="#__codelineno-57-6"></a>
+<a id="__codelineno-57-7" name="__codelineno-57-7" href="#__codelineno-57-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </code></pre></div>
 <p>output</p>
 <p><code>students  scores
@@ -3241,44 +5379,49 @@ The <code>data.csv</code> will contain</p>
 1,Wine,80
 2,House,70</code></p>
 <h3 id="loopint-through-dataframe-with">Loopint through <code>DataFrame</code> with<a class="headerlink" href="#loopint-through-dataframe-with" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span> 
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">student_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;students&quot;</span><span class="p">:[</span><span class="s2">&quot;Amy&quot;</span><span class="p">,</span> <span class="s2">&quot;Wine&quot;</span><span class="p">,</span> <span class="s2">&quot;House&quot;</span><span class="p">],</span> <span class="s2">&quot;scores&quot;</span><span class="p">:[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">70</span><span class="p">]</span> <span class="p">}</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">student_pd</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">student_dict</span><span class="p">)</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">student_pd</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">70</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<a id="__codelineno-58-2" name="__codelineno-58-2" href="#__codelineno-58-2"></a>
+<a id="__codelineno-58-3" name="__codelineno-58-3" href="#__codelineno-58-3"></a><span class="n">student_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;students&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Amy&quot;</span><span class="p">,</span> <span class="s2">&quot;Wine&quot;</span><span class="p">,</span> <span class="s2">&quot;House&quot;</span><span class="p">],</span> <span class="s2">&quot;scores&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">70</span><span class="p">]}</span>
+<a id="__codelineno-58-4" name="__codelineno-58-4" href="#__codelineno-58-4"></a>
+<a id="__codelineno-58-5" name="__codelineno-58-5" href="#__codelineno-58-5"></a><span class="n">student_pd</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">student_dict</span><span class="p">)</span>
+<a id="__codelineno-58-6" name="__codelineno-58-6" href="#__codelineno-58-6"></a>
+<a id="__codelineno-58-7" name="__codelineno-58-7" href="#__codelineno-58-7"></a><span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">student_pd</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a id="__codelineno-58-8" name="__codelineno-58-8" href="#__codelineno-58-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">)(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">80</span><span class="p">)(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">70</span><span class="p">)</span>
 </code></pre></div>
-The output is </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>0      Amy
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>1     Wine
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>2    House
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>Name: students, dtype: str
-<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>0    90
-<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>1    80
-<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>2    70
-<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>Name: scores, dtype: int64
+<p>The output is</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>0      Amy
+<a id="__codelineno-59-2" name="__codelineno-59-2" href="#__codelineno-59-2"></a>1     Wine
+<a id="__codelineno-59-3" name="__codelineno-59-3" href="#__codelineno-59-3"></a>2    House
+<a id="__codelineno-59-4" name="__codelineno-59-4" href="#__codelineno-59-4"></a>Name: students, dtype: str
+<a id="__codelineno-59-5" name="__codelineno-59-5" href="#__codelineno-59-5"></a>0    90
+<a id="__codelineno-59-6" name="__codelineno-59-6" href="#__codelineno-59-6"></a>1    80
+<a id="__codelineno-59-7" name="__codelineno-59-7" href="#__codelineno-59-7"></a>2    70
+<a id="__codelineno-59-8" name="__codelineno-59-8" href="#__codelineno-59-8"></a>Name: scores, dtype: int64
 </code></pre></div>
 <h3 id="using-iterrows">using <code>iterrows</code><a class="headerlink" href="#using-iterrows" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">for</span> <span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">row</span><span class="p">)</span> <span class="ow">in</span> <span class="n">student_pd</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Index:</span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Student:</span><span class="si">{</span><span class="n">row</span><span class="o">.</span><span class="n">students</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1">#row is a Series</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="k">for</span> <span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">row</span><span class="p">)</span> <span class="ow">in</span> <span class="n">student_pd</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+<a id="__codelineno-60-2" name="__codelineno-60-2" href="#__codelineno-60-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Index:</span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-60-3" name="__codelineno-60-3" href="#__codelineno-60-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Student:</span><span class="si">{</span><span class="n">row</span><span class="o">.</span><span class="n">students</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># row is a Series</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">Index</span><span class="p">:</span><span class="mi">0</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">Row</span><span class="p">:</span><span class="n">students</span>    <span class="n">Amy</span>
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">scores</span>       <span class="mi">90</span>
-<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="n">Name</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
-<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="n">Index</span><span class="p">:</span><span class="mi">1</span>
-<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="n">Row</span><span class="p">:</span><span class="n">students</span>    <span class="n">Wine</span>
-<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="n">scores</span>        <span class="mi">80</span>
-<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="n">Name</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
-<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="n">Index</span><span class="p">:</span><span class="mi">2</span>
-<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="n">Row</span><span class="p">:</span><span class="n">students</span>    <span class="n">House</span>
-<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="n">scores</span>         <span class="mi">70</span>
-<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="n">Name</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="n">Index</span><span class="p">:</span> <span class="mi">0</span>
+<a id="__codelineno-61-2" name="__codelineno-61-2" href="#__codelineno-61-2"></a><span class="n">Row</span><span class="p">:</span> <span class="n">students</span>
+<a id="__codelineno-61-3" name="__codelineno-61-3" href="#__codelineno-61-3"></a><span class="n">Amy</span>
+<a id="__codelineno-61-4" name="__codelineno-61-4" href="#__codelineno-61-4"></a><span class="n">scores</span>
+<a id="__codelineno-61-5" name="__codelineno-61-5" href="#__codelineno-61-5"></a><span class="mi">90</span>
+<a id="__codelineno-61-6" name="__codelineno-61-6" href="#__codelineno-61-6"></a><span class="n">Name</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
+<a id="__codelineno-61-7" name="__codelineno-61-7" href="#__codelineno-61-7"></a><span class="n">Index</span><span class="p">:</span> <span class="mi">1</span>
+<a id="__codelineno-61-8" name="__codelineno-61-8" href="#__codelineno-61-8"></a><span class="n">Row</span><span class="p">:</span> <span class="n">students</span>
+<a id="__codelineno-61-9" name="__codelineno-61-9" href="#__codelineno-61-9"></a><span class="n">Wine</span>
+<a id="__codelineno-61-10" name="__codelineno-61-10" href="#__codelineno-61-10"></a><span class="n">scores</span>
+<a id="__codelineno-61-11" name="__codelineno-61-11" href="#__codelineno-61-11"></a><span class="mi">80</span>
+<a id="__codelineno-61-12" name="__codelineno-61-12" href="#__codelineno-61-12"></a><span class="n">Name</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
+<a id="__codelineno-61-13" name="__codelineno-61-13" href="#__codelineno-61-13"></a><span class="n">Index</span><span class="p">:</span> <span class="mi">2</span>
+<a id="__codelineno-61-14" name="__codelineno-61-14" href="#__codelineno-61-14"></a><span class="n">Row</span><span class="p">:</span> <span class="n">students</span>
+<a id="__codelineno-61-15" name="__codelineno-61-15" href="#__codelineno-61-15"></a><span class="n">House</span>
+<a id="__codelineno-61-16" name="__codelineno-61-16" href="#__codelineno-61-16"></a><span class="n">scores</span>
+<a id="__codelineno-61-17" name="__codelineno-61-17" href="#__codelineno-61-17"></a><span class="mi">70</span>
+<a id="__codelineno-61-18" name="__codelineno-61-18" href="#__codelineno-61-18"></a><span class="n">Name</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
 </code></pre></div>
-<h3 id="create-a-dict-from-a">Create a dict from a<a class="headerlink" href="#create-a-dict-from-a" title="Permanent link">&para;</a></h3>
 
 
 
