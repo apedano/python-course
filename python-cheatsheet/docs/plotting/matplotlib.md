@@ -265,3 +265,46 @@ plt.imshow(img)
 plt.axis('off')
 plt.show()
 ```
+
+## Show a binary image 
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def make_image(class_idx: int, noise: float = 0.1) -> np.ndarray:
+    """Return a flat 64-d vector for one shape (values in [-1, 1])."""
+    img = np.zeros((8, 8))
+
+    if class_idx == 0:          # Circle — ring of pixels
+        for x, y in [(2,0),(3,0),(4,0),(5,0),(1,1),(6,1),(0,2),(7,2),
+                     (0,3),(7,3),(0,4),(7,4),(1,5),(6,5),(2,6),(3,6),(4,6),(5,6)]:
+            img[y, x] = 1.0
+
+    elif class_idx == 1:        # Cross — two diagonals
+        for i in range(8):
+            img[i, i] = 1.0
+            img[i, 7 - i] = 1.0
+
+    elif class_idx == 2:        # Triangle — upper half-triangle
+        for row in range(4):
+            for col in range(row, 8 - row):
+                img[row, col] = 1.0
+
+    else:                       # Square — filled rectangle with border
+        img[1:7, 1:7] = 1.0
+        img[0, :] = img[7, :] = img[:, 0] = img[:, 7] = 1.0
+
+    img += np.random.randn(8, 8) * noise
+    img  = np.clip(img, 0, 1)
+    return img.flatten() * 2 - 1            # normalise to [-1, 1]
+
+circle=make_image(0)
+# Display image
+plt.imshow(circle.reshape((8,8)), cmap="gray")
+plt.axis('off')  # hide axes
+plt.title("Random RGB Image")
+plt.show()
+```
+
+![circle.png](circle.png)
